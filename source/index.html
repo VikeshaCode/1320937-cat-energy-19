@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="img/logo-mobile-header.svg" width="191" height="39"
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="img/logo-header.svg" width="191" height="39"
          alt="Логотип функционального питания для котов Cat energy">
   </a>
   <nav class="main-nav">
@@ -19,14 +19,11 @@
         <li class="site-list__item"><a>Каталог продукции</a></li>
         <li class="site-list__item"><a>Подбор программы</a></li>
       </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item"><a class="user-list__login" href="login.html"></a></li>
-      </ul>
     </div>
   </nav>
 </header>
 
-<main class="page-main>">
+<main class="main>">
 
   <section class="hero-header">
     <h1 class="hero-header__title">Функциональное питание для котов</h1>
@@ -38,10 +35,10 @@
   <section class="programs">
     <div class="programs__wrapper">
       <h2 class="visually-hidden">Наши программы</h2>
-      <a class="programs__choose button" href="form.html">Подобрать программу</a>
+      <a class="programs__button" href="form.html">Подобрать программу</a>
       <ul class="programs__list">
         <li class="programs__item">
-          <img class="programs__item--slim-img" src="img/icon-cat-slim.svg" width="35" height="49"
+          <img class="programs__img" src="img/icon-cat-slim.svg" width="35" height="49"
                alt="Программа похудение">
           <h3 class="programs__title">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -51,7 +48,7 @@
         </li>
         <li class="programs__item">
           <h3 class="programs__title">Набор массы</h3>
-          <img class="programs__item--pro-img" src="img/icon-cat-pro.svg" width="67" height="28"
+          <img class="programs__img" src="img/icon-cat-pro.svg" width="67" height="28"
                alt="Программа набор массы">
           <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -66,17 +63,21 @@
     <div class="advantages__wrapper">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--1">Функциональное питание содержит только полезные питательные
+        <li class="advantages__item icon-list">Функциональное питание содержит только полезные питательные
           вещества.
+          <div class="icon-list--leaf"></div>
         </li>
-        <li class="advantages__item advantages__item--2">Выпускается в виде порошка, который нужно лишь залить кипятком
+        <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком
           и готово.
+          <div class="icon-list--glass"></div>
         </li>
-        <li class="advantages__item advantages__item--3">Замените один-два приема обычной еды на наше функциональное
+        <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное
           питание.
+          <div class="icon-list--cutler"></div>
         </li>
-        <li class="advantages__item advantages__item--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+        <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего
           питомца!
+          <div class="icon-list--clock"></div>
         </li>
       </ul>
     </div>
@@ -88,11 +89,11 @@
       Отличный результат без изнуряющих тренировок!
       При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
     <div class="example__stats">
-      <b>5 кг</b>
+      <div>5 кг</div>
       <div>снижение веса</div>
     </div>
     <div class="example__stats">
-      <b>60 дней</b>
+      <div>60 дней</div>
       <div>затрачено времени</div>
     </div>
     <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
@@ -106,9 +107,9 @@
   </section>
 </main>
 
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <div class="page-footer__contacts contacts">
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__contacts contacts">
       <p class="contacts__promo">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="contacts__picture">
@@ -117,9 +118,9 @@
         <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53"
              alt="Указатель на карте"></div>
     </div>
-    <img class="page-footer__logo" src="img/footer-logo.svg" width="191" height="39"
+    <img class="footer__logo" src="img/footer-logo.svg" width="191" height="39"
          alt="Логотип функционального питания для котов Cat energy">
-    <div class="page-footer__social social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte"
@@ -135,10 +136,10 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <p class="copyright__text">HTML Academy</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__link--HTML-logo" src="img/htmlacademy.svg" width="27" height="34"
+      <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="link__HTML-logo" src="img/htmlacademy.svg" width="27" height="34"
              alt="Логотип HTML Академии">
       </a>
     </div>

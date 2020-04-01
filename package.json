@@ -6,7 +6,8 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "10.1.0",
-    "stylelint-config-htmlacademy": "^0.1.4"
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "caniuse-lite": "^1.0.30001038"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -19,8 +20,5 @@
   ],
   "engines": {
     "node": "8.16"
-  },
-  "dependencies": {
-    "caniuse-lite": "^1.0.30001038"
   }
 }
