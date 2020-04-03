@@ -5,8 +5,8 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "10.1.0",
-    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint": "13.2.1",
+    "stylelint-config-htmlacademy": "0.1.4",
     "caniuse-lite": "^1.0.30001038"
   },
   "scripts": {
