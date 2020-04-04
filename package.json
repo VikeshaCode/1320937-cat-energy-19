@@ -39,6 +39,11 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 500
   }
+
 
 }
