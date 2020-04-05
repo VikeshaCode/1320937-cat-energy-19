@@ -4,6 +4,10 @@
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "stylelint": "13.2.1",
+    "stylelint-config-htmlacademy": "0.1.4",
+    "caniuse-lite": "^1.0.30001038",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
@@ -11,9 +15,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "prettier": "^2.0.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -37,5 +39,11 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 500
   }
+
+
 }
