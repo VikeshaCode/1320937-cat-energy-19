@@ -1,0 +1,21 @@
+.advantages {
+}
+
+.advantages__wrapper {
+}
+
+.advantages__title {
+  @include font-oswald(400, $font-size-xxl);
+  line-height: 60px;
+  color: $black-three;
+}
+
+.advantages__list {
+  @include font-arial(400, $font-size-s);
+  line-height: 18px;
+  color: $dark-grey;
+  list-style: none;
+}
+
+.advantages__item {
+}

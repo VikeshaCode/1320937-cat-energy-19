@@ -1,0 +1,14 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+  @include font-oswald(500, $font-size-l);
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.site-list__item a {
+  text-decoration: none;
+}

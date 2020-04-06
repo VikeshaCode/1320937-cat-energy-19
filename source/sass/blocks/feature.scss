@@ -1,0 +1,13 @@
+.feature {
+}
+
+.feature__list {
+  @include font-arial(400, $font-size-xs);
+  list-style: none;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.feature__item {
+
+}

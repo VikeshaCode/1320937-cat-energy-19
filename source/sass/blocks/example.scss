@@ -1,0 +1,52 @@
+.example {
+  background-color: $light-grey;
+}
+
+.example__title {
+  @include font-oswald(400, $font-size-xxl);
+  line-height: 60px;
+  color: $black-three;
+}
+
+.example__text {
+  @include font-arial(400, $font-size-s);
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.example__list {
+  list-style: none;
+}
+
+.example__item {
+}
+
+.example__item-title {
+  @include font-oswald(400, $font-size-xl);
+  line-height: 24px;
+  color: $black-three;
+}
+
+.example__item-subtitle {
+  @include font-arial(400, $font-size-xs);
+  line-height: 12px;
+  color: $dark-grey;
+}
+
+.example__expenses {
+  @include font-oswald(400, $font-size-s);
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.example__picture {
+
+}
+
+.example__results {
+  @include font-oswald(400, $font-size-m);
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}

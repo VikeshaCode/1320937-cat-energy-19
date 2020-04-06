@@ -1,0 +1,19 @@
+.catalog-item {
+}
+
+.catalog-item__title {
+  @include font-oswald(400, $font-size-m);
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.catalog-item__picture {
+}
+
+.catalog-item__feature {
+}
+
+.catalog-item__button {
+  line-height: 20px;
+}

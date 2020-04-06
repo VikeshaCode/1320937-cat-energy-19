@@ -1,0 +1,17 @@
+.hero-header {
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-header__title {
+  @include font-oswald(400, $font-size-xxl);
+  line-height: 36px;
+}
+
+.hero-header__subtitle {
+  @include font-oswald(400, $font-size-s);
+  line-height: 14px;
+}
+
+.hero-header__title-image {
+}

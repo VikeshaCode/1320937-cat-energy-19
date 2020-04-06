@@ -1,0 +1,36 @@
+.program {
+  background: $light-grey;
+}
+
+.program__img {
+}
+
+.program__title, .program__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.program__title {
+  font-size: $font-size-xl;
+  line-height: 37px;
+}
+
+.program__link {
+  font-size: $font-size-m;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.program__description {
+  @include font-arial(400, $font-size-s);
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.program__divider {
+  width: 240px;
+  height: 1px;
+  opacity: 0.1;
+}

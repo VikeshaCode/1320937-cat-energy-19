@@ -1,0 +1,12 @@
+.catalog {
+}
+
+.catalog__wrapper {
+}
+
+.catalog__title {
+  @include font-oswald(400, $font-size-xxl);
+  line-height: 60px;
+  color: $black-three;
+  text-transform: uppercase;
+}

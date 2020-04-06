@@ -1,0 +1,15 @@
+.copyright {
+}
+
+.copyright__text {
+  @include font-arial(400, $font-size-m);
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__link-logo {
+}

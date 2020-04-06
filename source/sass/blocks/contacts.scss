@@ -1,0 +1,24 @@
+.contacts {
+}
+
+.contacts__promo {
+  @include font-oswald(400, $font-size-m);
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  @include font-arial(400, $font-size-s);
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.contacts__picture {
+}
+
+.contacts__map {
+}
+
+.contacts__map-pin {
+}

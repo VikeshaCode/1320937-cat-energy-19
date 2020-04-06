@@ -1,0 +1,6 @@
+.button {
+  @include font-oswald(400, $font-size-m);
+  color: $white;
+  background-color: $green-bg;
+  text-decoration: none;
+}
