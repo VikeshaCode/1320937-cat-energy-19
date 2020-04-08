@@ -1,0 +1,17 @@
+.text-field {
+  @include font-oswald(400, 16px);
+  line-height: 1.13;
+  color: $c-mine-shaft;
+}
+
+.text-field__input {
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+  color: $c-dark-grey;
+
+  &--email {
+  }
+
+  &--phone {
+  }
+}

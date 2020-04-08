@@ -2,9 +2,8 @@
 }
 
 .copyright__text {
-  @include font-arial(400, $font-size-m);
-  line-height: 16px;
-  color: $dark-grey;
+  font-size: 16px;
+  color: $c-dark-grey;
 }
 
 .copyright__link {

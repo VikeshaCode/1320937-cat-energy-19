@@ -1,17 +1,14 @@
 .example {
-  background-color: $light-grey;
+  background-color: $c-light-grey;
 }
 
 .example__title {
-  @include font-oswald(400, $font-size-xxl);
-  line-height: 60px;
-  color: $black-three;
+  @include font-oswald(400, 36px);
+  line-height: 1.67;
+  color: $c-cod-grey;
 }
 
 .example__text {
-  @include font-arial(400, $font-size-s);
-  line-height: 18px;
-  color: $dark-grey;
 }
 
 .example__list {
@@ -22,21 +19,19 @@
 }
 
 .example__item-title {
-  @include font-oswald(400, $font-size-xl);
-  line-height: 24px;
-  color: $black-three;
+  @include font-oswald(400, 24px);
+  color: $c-cod-grey;
 }
 
 .example__item-subtitle {
-  @include font-arial(400, $font-size-xs);
-  line-height: 12px;
-  color: $dark-grey;
+  font-size: 12px;
+  color: $c-dark-grey;
 }
 
 .example__expenses {
-  @include font-oswald(400, $font-size-s);
-  line-height: 20px;
-  color: $black-three;
+  @include font-oswald(400, 14px);
+  line-height: 1.43;
+  color: $c-cod-grey;
   text-transform: uppercase;
 }
 
@@ -45,8 +40,8 @@
 }
 
 .example__results {
-  @include font-oswald(400, $font-size-m);
-  line-height: 20px;
-  color: $black-three;
+  @include font-oswald(400, 16px);
+  line-height: 1.25;
+  color: $c-cod-grey;
   text-transform: uppercase;
 }

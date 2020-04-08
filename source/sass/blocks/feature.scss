@@ -2,10 +2,9 @@
 }
 
 .feature__list {
-  @include font-arial(400, $font-size-xs);
+  font-size: 12px;
   list-style: none;
-  line-height: 16px;
-  color: $dark-grey;
+  line-height: 1.29;
 }
 
 .feature__item {

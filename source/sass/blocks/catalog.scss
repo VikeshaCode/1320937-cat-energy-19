@@ -5,8 +5,8 @@
 }
 
 .catalog__title {
-  @include font-oswald(400, $font-size-xxl);
+  @include font-oswald(400, 36px);
   line-height: 60px;
-  color: $black-three;
+  color: $c-cod-grey;
   text-transform: uppercase;
 }

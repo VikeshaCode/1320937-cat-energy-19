@@ -1,0 +1,12 @@
+.promo {
+  background-color: green;
+  background: url("../../img/gift-photo-mobile@1x.jpg") 0 center no-repeat, url("../../img/icon-gift.svg") 0 center no-repeat;
+}
+
+.promo__title {
+  @include font-arial(400, 16px);
+  line-height: 1.25;
+  color: $c-white;
+  text-align: center;
+}
+

@@ -2,16 +2,15 @@
 }
 
 .contacts__promo {
-  @include font-oswald(400, $font-size-m);
-  line-height: 20px;
-  color: $black-three;
+  @include font-oswald(400, 16px);
+  line-height: 1.25;
+  color: $c-cod-grey;
   text-transform: uppercase;
 }
 
 .contacts__text {
-  @include font-arial(400, $font-size-s);
   line-height: 20px;
-  color: $dark-grey;
+  color: $c-dark-grey;
 }
 
 .contacts__picture {

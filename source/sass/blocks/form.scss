@@ -1,0 +1,18 @@
+.form {
+}
+
+.form__wrapper {
+}
+
+.form__title {
+  @include font-oswald(400, 36px);
+  line-height: 1.67;
+  color: $c-cod-grey;
+}
+
+.form__text {
+  @include font-oswald(400, 14px);
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: $c-cod-grey;
+}

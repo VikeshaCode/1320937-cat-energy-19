@@ -1,0 +1,10 @@
+.checkbox {
+  @include font-oswald(400, 16px);
+  line-height: 1.13;
+  color: $c-mine-shaft;
+}
+
+.checkbox__input {
+  border: 1px solid #cdcdcd;
+
+}

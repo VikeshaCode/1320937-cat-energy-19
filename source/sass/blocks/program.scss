@@ -1,5 +1,5 @@
 .program {
-  background: $light-grey;
+  background: $c-light-grey;
 }
 
 .program__img {
@@ -8,25 +8,21 @@
 .program__title, .program__link {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: $black-three;
+  color: $c-mine-shaft;
   text-transform: uppercase;
 }
 
 .program__title {
-  font-size: $font-size-xl;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 1.54;
 }
 
 .program__link {
-  font-size: $font-size-m;
-  line-height: 16px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 .program__description {
-  @include font-arial(400, $font-size-s);
-  line-height: 18px;
-  color: $dark-grey;
 }
 
 .program__divider {
