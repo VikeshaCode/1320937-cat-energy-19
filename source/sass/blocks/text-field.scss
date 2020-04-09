@@ -2,16 +2,29 @@
   @include font-oswald(16px);
   line-height: 1.13;
   color: $c-mine-shaft;
+  text-transform: uppercase;
 }
 
 .text-field__input {
   background-color: transparent;
-  border: 1px solid $c-silver;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   color: $c-dark-grey;
+  text-transform: uppercase;
+  margin-top: 14px;
+  height: 45px;
+  margin-left: 13px;
+  padding: 15px 0 15px 16px;
 
-  &--email {
+  &--email::after {
+    content: "";
+    background: url("../../img/mail.svg");
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    vertical-align: middle;
   }
 
-  &--phone {
+  &--phone::after {
+    content: "";
   }
 }

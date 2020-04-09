@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous"/>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
 <header class="header">
@@ -60,18 +63,30 @@
           <fieldset class="forms__fieldset program-form">
             <ul class="program-form__list" role="none">
               <li class="program-form__item">
-                <label class="radio">Похудение
+                <label class="radio">
                   <input class="radio__input" type="radio" name="program" value="slim" checked/>
+                  <span class="radio__circle">
+                    <div class="radio__check"></div>
+                    </span>
+                  <span class="radio__text">Похудение</span>
                 </label>
               </li>
               <li class="program-form__item">
-                <label class="radio">Набор массы
+                <label class="radio">
                   <input class="radio__input" type="radio" name="program" value="fat"/>
+                  <span class="radio__circle">
+                    <div class="radio__check"></div>
+                  </span>
+                  <span class="radio__text">Набор массы</span>
                 </label>
               </li>
               <li class="program-form__item">
-                <label class="radio">Не знаю (Нужен ваш совет)
+                <label class="radio">
                   <input class="radio__input" type="radio" name="program" value="help"/>
+                  <span class="radio__circle">
+                    <div class="radio__check"></div>
+                  </span>
+                  <span class="radio__text">Не знаю(Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -80,6 +95,7 @@
             <legend class="contacts-form__title title">
               Контактные данные (владельца кота)
             </legend>
+            <div class="contacts-form__divider"></div>
             <ul class="contacts-form__list" role="none">
               <li class="contacts-form__item">
                 <label class="text-field">E-mail:*
@@ -97,31 +113,41 @@
           </fieldset>
           <label class="textarea">
             <div class="textarea__text title">Комментарий</div>
+            <div class="textarea__divider"></div>
             <textarea class="textarea__field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
 
 
           <fieldset class="forms__fieldset additions">
             <legend class="additions__title title">Дополнительно</legend>
+            <div class="additions__divider"></div>
             <ul class="additions__list" role="none">
               <li class="additions__item">
-                <label class="checkbox">Сахарозаменитель
+                <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="adds" value="sugar" checked/>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="additions__item">
-                <label class="checkbox">Питьевая вода
+                <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="adds" value="water"/>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Питьевая вода</span>
                 </label>
               </li>
               <li class="additions__item">
-                <label class="checkbox">Молоко
+                <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="adds" value="milk"/>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Молоко</span>
                 </label>
               </li>
               <li class="additions__item">
-                <label class="checkbox">Витамины
+                <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="adds" value="vitamins"/>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Витамины</span>
                 </label>
               </li>
             </ul>
@@ -148,8 +174,7 @@
       </div>
     </div>
     <img class="footer__logo" src="img/footer-logo.svg" width="191" height="39"
-         alt="Логотип функционального питания для котов Cat energy"
-    />
+         alt="Логотип функционального питания для котов Cat energy"/>
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
