@@ -5,8 +5,8 @@
 }
 
 .textarea__field {
-  @include font-oswald(400, 16px);
+  @include font-oswald(16px);
   line-height: 1.13;
   color: $c-dark-grey;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $c-silver;
 }

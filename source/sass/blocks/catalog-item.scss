@@ -2,8 +2,8 @@
 }
 
 .catalog-item__title {
-  @include font-oswald(400, 16px);
-  line-height: 20px;
+  @include font-oswald(16px);
+  line-height: 1.25;
   color: $c-cod-grey;
   text-transform: uppercase;
 }
@@ -15,5 +15,4 @@
 }
 
 .catalog-item__button {
-  line-height: 20px;
 }

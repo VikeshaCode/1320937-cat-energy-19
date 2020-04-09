@@ -5,7 +5,7 @@
 }
 
 .advantages__title {
-  @include font-oswald(400, 36px);
+  @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
 }

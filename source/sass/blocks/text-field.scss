@@ -1,12 +1,12 @@
 .text-field {
-  @include font-oswald(400, 16px);
+  @include font-oswald(16px);
   line-height: 1.13;
   color: $c-mine-shaft;
 }
 
 .text-field__input {
   background-color: transparent;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $c-silver;
   color: $c-dark-grey;
 
   &--email {

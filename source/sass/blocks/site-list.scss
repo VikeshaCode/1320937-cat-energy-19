@@ -3,7 +3,8 @@
 }
 
 .site-list__item {
-  @include font-oswald(500, 20px);
+  @include font-oswald(20px);
+  font-weight: 500;
   color: $c-cod-grey;
   text-transform: uppercase;
   text-align: center;

@@ -1,6 +1,6 @@
 .button {
-  @include font-oswald(400, 16px);
-  line-height: 20px;
+  @include font-oswald(16px);
+  line-height: 1.25;
   color: $c-white;
   background-color: $c-green;
   text-align: center;

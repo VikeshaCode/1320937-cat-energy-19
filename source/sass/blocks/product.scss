@@ -3,14 +3,12 @@
 }
 
 .product__title {
-  @include font-oswald(400, 16px);
+  @include font-oswald(16px);
   color: $c-mine-shaft;
   text-transform: uppercase;
 }
 
 .product__feature {
-  @include font-arial(400, 14px);
-  color: $c-dark-grey;
 }
 
 .product__button {

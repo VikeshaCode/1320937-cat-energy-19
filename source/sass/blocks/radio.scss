@@ -1,9 +1,9 @@
 .radio {
-  @include font-oswald(400, 16px);
+  @include font-oswald(16px);
   line-height: 1.13;
   color: $c-mine-shaft;
 }
 
 .radio__input {
-  border: 1px solid #cdcdcd;
+  border: 1px solid $c-silver;
 }

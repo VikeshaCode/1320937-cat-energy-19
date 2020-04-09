@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  @include font-oswald(400, 36px);
+  @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
 }
@@ -19,7 +19,7 @@
 }
 
 .example__item-title {
-  @include font-oswald(400, 24px);
+  @include font-oswald(24px);
   color: $c-cod-grey;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .example__expenses {
-  @include font-oswald(400, 14px);
+  @include font-oswald(14px);
   line-height: 1.43;
   color: $c-cod-grey;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
 }
 
 .example__results {
-  @include font-oswald(400, 16px);
+  @include font-oswald(16px);
   line-height: 1.25;
   color: $c-cod-grey;
   text-transform: uppercase;
