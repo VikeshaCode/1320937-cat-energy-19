@@ -1,0 +1,34 @@
+.program {
+  background: $c-light-grey;
+}
+
+//.program__img {}
+.program__description {
+  margin: 0 36px 23px 21px;
+}
+
+.program__title,
+.program__link {
+  font-family: "Oswald", sans-serif;
+  color: $c-mine-shaft;
+  text-transform: uppercase;
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 1.54;
+}
+
+.program__link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+.program__divider {
+  width: 240px;
+  height: 1px;
+  opacity: 0.1;
+  margin: 0 20px;
+  background: $c-dark-grey;
+}

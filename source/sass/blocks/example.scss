@@ -1,0 +1,41 @@
+.example {
+  background-color: $c-light-grey;
+}
+
+.example__title {
+  @include font-oswald(36px);
+  line-height: 1.67;
+  color: $c-cod-grey;
+}
+
+//.example__text {}
+//.example__picture {}
+//.example__picture {}
+
+.example__list {
+  list-style: none;
+}
+
+.example__item-title {
+  @include font-oswald(24px);
+  color: $c-cod-grey;
+}
+
+.example__item-subtitle {
+  font-size: 12px;
+  color: $c-dark-grey;
+}
+
+.example__expenses {
+  @include font-oswald(14px);
+  line-height: 1.43;
+  color: $c-cod-grey;
+  text-transform: uppercase;
+}
+
+.example__results {
+  @include font-oswald(16px);
+  line-height: 1.25;
+  color: $c-cod-grey;
+  text-transform: uppercase;
+}

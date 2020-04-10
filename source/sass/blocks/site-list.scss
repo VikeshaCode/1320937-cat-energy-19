@@ -1,0 +1,11 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+  @include font-oswald(20px, 500);
+  color: $c-cod-grey;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}

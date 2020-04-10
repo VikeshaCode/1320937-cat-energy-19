@@ -1,0 +1,16 @@
+//.contacts {}
+//.contacts__picture {}
+//.contacts__map {}
+//.contacts__map-pin {}
+
+.contacts__promo {
+  @include font-oswald(16px);
+  line-height: 1.25;
+  color: $c-cod-grey;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  line-height: 1.43;
+  color: $c-dark-grey;
+}

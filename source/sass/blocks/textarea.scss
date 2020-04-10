@@ -1,0 +1,21 @@
+//.textarea {}
+
+.textarea__text {
+  padding-top: 31px;
+}
+
+.textarea__field {
+  @include font-oswald(16px);
+  line-height: 1.13;
+  color: $c-dark-grey;
+  text-transform: uppercase;
+  border: 1px solid rgba($c-silver, 0.5);
+  min-height: 150px;
+  margin-top: 31px;
+}
+
+.textarea__divider {
+  width: 158px;
+  height: 3px;
+  background-color: $c-green;
+}

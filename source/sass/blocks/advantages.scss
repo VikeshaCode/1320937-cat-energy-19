@@ -1,0 +1,13 @@
+//.advantages {}
+//.advantages__wrapper {}
+//.advantages__item {}
+
+.advantages__title {
+  @include font-oswald(36px);
+  line-height: 1.67;
+  color: $c-cod-grey;
+}
+
+.advantages__list {
+  list-style: none;
+}

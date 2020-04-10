@@ -1,0 +1,19 @@
+.forms {
+  margin-top: 39px;
+}
+
+//.forms__fieldset {
+//}
+
+.forms__legend {
+  line-height: 1.14;
+  color: $c-dark-grey;
+
+  &--bottom {
+    padding-top: 23px;
+  }
+}
+
+.forms__button {
+  margin-top: 34px;
+}

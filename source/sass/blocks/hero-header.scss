@@ -1,0 +1,25 @@
+.hero-header {
+  color: $c-white;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+}
+
+.hero-header__title {
+  @include font-oswald(36px);
+  width: 245px;
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  margin: 29px 37px 19px 38px;
+}
+
+.hero-header__subtitle {
+  @include font-oswald(14px);
+  text-transform: uppercase;
+  margin-top: 19px;
+  text-align: center;
+}
+
+.hero-header__title-image {
+  margin: 29px 20px 3px 20px;
+}
