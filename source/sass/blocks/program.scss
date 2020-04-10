@@ -2,10 +2,11 @@
   background: $c-light-grey;
 }
 
-.program__img {
-}
+//.program__img {}
+//.program__description {}
 
-.program__title, .program__link {
+.program__title,
+.program__link {
   font-family: "Oswald", sans-serif;
   color: $c-mine-shaft;
   text-transform: uppercase;
@@ -21,8 +22,6 @@
   text-decoration: none;
 }
 
-.program__description {
-}
 
 .program__divider {
   width: 240px;

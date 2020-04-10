@@ -39,10 +39,10 @@
 }
 
 body {
+  @include font-arial(14px);
   margin: 0;
   padding: 0;
   background-color: $c-white;
-  @include font-arial(14px);
   color: $c-dark-grey;
 }
 

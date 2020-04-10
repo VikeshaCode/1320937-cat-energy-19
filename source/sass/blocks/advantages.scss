@@ -1,8 +1,6 @@
-.advantages {
-}
-
-.advantages__wrapper {
-}
+//.advantages {}
+//.advantages__wrapper {}
+//.advantages__item {}
 
 .advantages__title {
   @include font-oswald(36px);
@@ -12,7 +10,4 @@
 
 .advantages__list {
   list-style: none;
-}
-
-.advantages__item {
 }

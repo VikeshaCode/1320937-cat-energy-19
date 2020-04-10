@@ -1,18 +1,11 @@
-.catalog-item {
-}
+//.catalog-item {}
+//.catalog-item__picture {}
+//.catalog-item__feature {}
+//.catalog-item__button {}
 
 .catalog-item__title {
   @include font-oswald(16px);
   line-height: 1.25;
   color: $c-cod-grey;
   text-transform: uppercase;
-}
-
-.catalog-item__picture {
-}
-
-.catalog-item__feature {
-}
-
-.catalog-item__button {
 }

@@ -1,5 +1,7 @@
-.contacts {
-}
+//.contacts {}
+//.contacts__picture {}
+//.contacts__map {}
+//.contacts__map-pin {}
 
 .contacts__promo {
   @include font-oswald(16px);
@@ -11,13 +13,4 @@
 .contacts__text {
   line-height: 1.43;
   color: $c-dark-grey;
-}
-
-.contacts__picture {
-}
-
-.contacts__map {
-}
-
-.contacts__map-pin {
 }

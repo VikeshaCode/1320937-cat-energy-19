@@ -1,15 +1,9 @@
-.product {
-
-}
+//.product {}
+//.product__feature {}
+//.product__button {}
 
 .product__title {
   @include font-oswald(16px);
   color: $c-mine-shaft;
   text-transform: uppercase;
-}
-
-.product__feature {
-}
-
-.product__button {
 }
