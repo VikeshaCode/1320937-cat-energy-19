@@ -1,9 +1,12 @@
 .program {
   background: $c-light-grey;
+  margin: 20px;
 }
 
 //.program__img {}
-//.program__description {}
+.program__description {
+  margin: 0 36px 23px 21px;
+}
 
 .program__title,
 .program__link {
@@ -27,4 +30,6 @@
   width: 240px;
   height: 1px;
   opacity: 0.1;
+  margin: 0 20px;
+  background: $c-dark-grey;
 }
