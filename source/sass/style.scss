@@ -39,14 +39,42 @@
 }
 
 body {
-  @include font-arial(14px);
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  background-color: $c-white;
+
+  @include font-arial(14px);
+  line-height: 1;
   color: $c-dark-grey;
-  min-width: 320px;
+  font-style: normal;
+
+  background-color: $c-white;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1440px;
+    padding: 0 110px;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

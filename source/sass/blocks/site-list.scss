@@ -2,10 +2,35 @@
   list-style: none;
 }
 
-.site-list__item {
-  @include font-oswald(20px, 500);
+.site-list__item a {
   color: $c-cod-grey;
+
+  @include font-oswald(20px, 500);
   text-transform: uppercase;
+  display: block;
   text-align: center;
-  vertical-align: middle;
+  padding: 23px 0;
+  border-bottom: 1px solid $c-light-grey;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    color: $c-mine-shaft;
+
+    @include font-oswald(18px);
+    line-height: 1.39;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-oswald(20px);
+    line-height: 1.25;
+  }
+}
+
+.site-list__item--white a {
+  @media (min-width: $desktop-width) {
+    color: $c-white;
+  }
 }

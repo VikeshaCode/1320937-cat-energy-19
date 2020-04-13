@@ -1,21 +1,39 @@
-//.programs {
-//}
-//.programs__wrapper {
-//}
-//.programs__item {
-//}
-
-
-.programs__button {
-  font-size: 14px;
-  line-height: 1.29;
-  width: 280px;
-  height: 40px;
-  margin: 0 20px 0 20px;
-  display: inline-block;
+.programs {
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+    width: 100%;
+  }
 }
 
 .programs__list {
   list-style: none;
-  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.programs__item {
+  width: 280px;
+  padding: 22px;
+  margin: 22px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 81px 62px 62px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 41px 56px 62px 52px;
+    width: 570px;
+    min-height: 372px;
+  }
+}
+
+.programs__wrapper {
+  display: flex;
 }

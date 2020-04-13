@@ -1,6 +1,24 @@
-//.contacts {}
-//.contacts__picture {}
-//.contacts__map {}
+.contacts {
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.contacts__picture {
+  background: $c-light-grey url("/img/bg-map-mobile@1x.png") no-repeat;
+  min-height: 400px;
+
+  @media (min-width: $tablet-width) {
+    background: $c-light-grey url("/img/bg-map-tablet@1x.png") no-repeat;
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $c-light-grey url("/img/bg-map-desktop@1x.png") no-repeat;
+    min-height: 400px;
+    margin-top: 73px;
+  }
+}
+
 //.contacts__map-pin {}
 
 .contacts__promo {
@@ -8,9 +26,17 @@
   line-height: 1.25;
   color: $c-cod-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 154px;
+  }
 }
 
 .contacts__text {
   line-height: 1.43;
   color: $c-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
 }

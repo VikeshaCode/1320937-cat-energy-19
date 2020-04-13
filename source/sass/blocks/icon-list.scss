@@ -1,16 +1,32 @@
-//.icon-list {
-//}
-//
-//.icon-list__img {
-//  &--leaf {
-//  }
-//
-//  &--glass {
-//  }
-//
-//  &--cutler {
-//  }
-//
-//  &--clock {
-//  }
-//}
+//.icon-list {}
+
+.icon-list__img {
+  width: 148px;
+  height: 60px;
+  background: $c-green;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--leaf {
+    background-image: url("/img/advantage-leaf.png");
+  }
+
+  &--glass {
+    background-image: url("/img/advantage-powder@1x.png");
+  }
+
+  &--cutler {
+    background-image: url("/img/advantage-cutlery.png");
+  }
+
+  &--clock {
+    background-image: url("/img/advantage-clock.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    width: 80px;
+    height: 80px;
+  }
+}
