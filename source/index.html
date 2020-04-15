@@ -11,18 +11,18 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header header--closed">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
             <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" width="174" height="59" alt="Логотип функционального питания для котов Cat energy" />
             <img class="header__logo-image header__logo-image--desktop" src="img/logo-desktop.svg" width="203" height="60" alt="Логотип функционального питания для котов Cat energy" />
           </a>
-          <button class="header__toogle" type="button"></button>
+          <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--white">
+            <li class="site-list__item site-list__item--white site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--white">
@@ -170,5 +170,22 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      var header = document.querySelector(".header");
+      var headerToogle = document.querySelector(".header__toogle");
+
+      header.classList.remove("header--nojs");
+
+      headerToogle.addEventListener("click", function () {
+        if (header.classList.contains("header--closed")) {
+          header.classList.remove("header--closed");
+          header.classList.add("header--opened");
+        } else {
+          header.classList.add("header--closed");
+          header.classList.remove("header--opened");
+        }
+      });
+    </script>
   </body>
 </html>

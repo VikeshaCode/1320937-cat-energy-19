@@ -39,6 +39,10 @@
     font-size: 60px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
 }
 
 .example__text {

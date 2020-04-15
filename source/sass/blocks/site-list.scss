@@ -3,21 +3,20 @@
 }
 
 .site-list__item a {
-  color: $c-cod-grey;
-
   @include font-oswald(20px, 500);
+  color: $c-cod-grey;
   text-transform: uppercase;
   display: block;
   text-align: center;
-  padding: 23px 0;
-  border-bottom: 1px solid $c-light-grey;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border-top: 1px solid $c-light-grey;
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    color: $c-mine-shaft;
-
     @include font-oswald(18px);
     line-height: 1.39;
+    color: $c-mine-shaft;
     border: none;
     padding: 0;
     width: 100%;
@@ -26,11 +25,37 @@
   @media (min-width: $desktop-width) {
     @include font-oswald(20px);
     line-height: 1.25;
+
+    &:not(:last-child) {
+      margin-left: 36px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 .site-list__item--white a {
   @media (min-width: $desktop-width) {
     color: $c-white;
+  }
+}
+
+.site-list__item--active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -9px;
+    height: 2px;
+    background: $c-white;
   }
 }

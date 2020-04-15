@@ -1,2 +1,5 @@
-//.main {
-//}
+.main {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
