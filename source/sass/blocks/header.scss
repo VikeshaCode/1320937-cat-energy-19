@@ -41,7 +41,7 @@
 
 
 @media (max-width: $mobile-width-only) {
-  .header--closed .main-nav {
+  .header--closed .header__main-nav {
     display: none;
   }
 }
@@ -50,7 +50,7 @@
   display: none;
 }
 
-.header--nojs .main-nav {
+.header--nojs .header__main-nav {
   display: block;
 }
 
@@ -125,4 +125,14 @@
   width: 19px;
   height: 19px;
   background: url("/img/icon-close.svg");
+}
+
+.header__main-nav {
+  @media (min-width: $tablet-width) {
+    width: 438px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
 }
