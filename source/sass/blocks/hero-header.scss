@@ -121,11 +121,8 @@
 .hero-header__button {
   font-size: 14px;
   line-height: 1.29;
-  width: 280px;
-  height: 40px;
   margin: 0 auto;
-  display: inline-block;
-  order: 5;
+  padding-top: 12px;
 
   &--tablet {
     display: none;

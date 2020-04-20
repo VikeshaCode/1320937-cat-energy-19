@@ -51,21 +51,9 @@ body {
   background-color: $c-white;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .container {
-    width: 1220px;
+    width: 1300px;
     margin: 0 auto;
   }
 }
