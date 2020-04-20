@@ -1,12 +1,34 @@
 .contacts-form {
   margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
 }
 
-//.contacts-form__title {}
-//.contacts-form__item {}
+.contacts-form__title {
+  margin-top: 31px;
+}
+
 //.contacts-form__divider {}
 
 .contacts-form__list {
   list-style: none;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+}
+
+.contacts-form__item {
+  @media (min-width: $desktop-width) {
+    width: 46.7%;
+  }
 }

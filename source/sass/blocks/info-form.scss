@@ -1,6 +1,14 @@
-//.info-form {}
-//.info-form__item {}
+.info-form {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 46.7%;
+  }
+}
 
 .info-form__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
+
+//.info-form__item {}

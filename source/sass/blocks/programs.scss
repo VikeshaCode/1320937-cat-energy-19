@@ -1,7 +1,10 @@
 .programs {
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     margin-top: 55px;
     width: 100%;
+    padding: 0 40px;
   }
 }
 

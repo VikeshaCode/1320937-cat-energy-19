@@ -25,7 +25,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 154px;
+    @include font-oswald(20px);
   }
 }
 
@@ -34,6 +34,8 @@
   color: $c-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 153px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
   }
 }

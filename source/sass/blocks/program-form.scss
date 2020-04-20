@@ -3,10 +3,29 @@
   margin-left: 0;
   margin-right: 0;
   border: 1px solid $c-gallery;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-top: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 46.7%;
+    height: 196px;
+    align-self: flex-end;
+  }
 }
 
 .program-form__list {
   list-style: none;
+  padding-left: 20px;
+  padding-bottom: 22px;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+  }
 }
 
 //.program-form__item {
