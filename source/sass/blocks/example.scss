@@ -3,7 +3,6 @@
   margin: 0 auto;
   width: 320px;
   padding: 16px 20px 39px 20px;
-  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -33,7 +32,6 @@
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -85,7 +83,6 @@
   width: 124px;
   height: 56px;
   text-align: center;
-  vertical-align: middle;
   position: relative;
 
   @media (min-width: $tablet-width) {
