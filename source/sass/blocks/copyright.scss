@@ -8,4 +8,8 @@
 
 .copyright__link {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }

@@ -1,10 +1,19 @@
-//.social {}
-//
+.social {
+  display: flex;
+  justify-content: center;
+}
+
 //.social__item {
-//  &--vkontakte {}
-//  &--instagram {}
-//  &--facebook {}
+//  &--vkontakte {
+//  }
+//
+//  &--instagram {
+//  }
+//
+//  &--facebook {
+//  }
 //}
+
 //.footer__copyright {}
 
 .social__link {
@@ -13,4 +22,8 @@
 
 .social__list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
 }

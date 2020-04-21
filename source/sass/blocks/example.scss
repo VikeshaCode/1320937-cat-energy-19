@@ -1,29 +1,127 @@
 .example {
   background-color: $c-light-grey;
+  margin: 0 auto;
+  width: 320px;
+  padding: 16px 20px 39px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 740px;
+    padding: 0 30px;
+    background: $c-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+  }
 }
+
+.example__container-left {
+  @media (min-width: $desktop-width) {
+    width: 469px;
+    margin-right: 139px;
+  }
+}
+
+//.example__container-right {
+//}
 
 .example__title {
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
 }
 
-//.example__text {}
-//.example__picture {}
-//.example__picture {}
+.example__text {
+  width: 266px;
+  margin-top: 24px;
+  line-height: 1.29;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 60px;
+    padding-right: 38px;
+    width: 100%;
+    word-wrap: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 142px;
+  }
+}
+
+.example__picture {
+  margin-top: 44px;
+}
 
 .example__list {
   list-style: none;
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
+}
+
+.example__item {
+  border: 1px solid $c-silver;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example__item-title {
   @include font-oswald(24px);
   color: $c-cod-grey;
+  line-height: 1.8;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 2;
+  }
 }
 
 .example__item-subtitle {
   font-size: 12px;
   color: $c-dark-grey;
+  position: absolute;
+  top: 45px;
+  left: 18px;
+  background: $c-light-grey;
+  width: 82px;
+
+  @media (min-width: $tablet-width) {
+    background: $c-white;
+    font-size: 14px;
+    width: 127px;
+    top: 60px;
+  }
+}
+
+.example__item:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .example__expenses {
@@ -31,6 +129,34 @@
   line-height: 1.43;
   color: $c-cod-grey;
   text-transform: uppercase;
+  margin-top: 38px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    width: 174px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+    margin-top: 48px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .example__results {
@@ -38,4 +164,64 @@
   line-height: 1.25;
   color: $c-cod-grey;
   text-transform: uppercase;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.example__results b:first-of-type {
+  margin-right: 19px;
+}
+
+.example__results b:last-child {
+  margin-left: 18px;
+}
+
+.example__slider-big {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid $c-silver;
+  background-color: $c-white;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: $c-alto;
+  }
+}
+
+.example__slider-small {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $c-green;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px $c-silver;
+    background-color: $c-white;
+    border-radius: 50%;
+    top: -14px;
+    left: 202px;
+  }
+}
+
+.example__slider-smaller {
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    background-color: $c-green;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: 12px;
+  }
 }

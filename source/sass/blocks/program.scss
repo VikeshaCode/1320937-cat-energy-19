@@ -3,32 +3,58 @@
 }
 
 //.program__img {}
+
 .program__description {
-  margin: 0 36px 23px 21px;
+  line-height: 1.29;
+  margin: 20px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 26px;
+  }
 }
 
 .program__title,
 .program__link {
   font-family: "Oswald", sans-serif;
-  color: $c-mine-shaft;
+  color: $c-cod-grey;
   text-transform: uppercase;
 }
 
 .program__title {
   font-size: 24px;
   line-height: 1.54;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1.03;
+    margin-top: 45px;
+  }
 }
 
 .program__link {
   font-size: 16px;
   text-decoration: none;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+  }
+}
 
 .program__divider {
   width: 240px;
   height: 1px;
   opacity: 0.1;
-  margin: 0 20px;
   background: $c-dark-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
