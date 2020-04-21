@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: 1299px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .advantages__item:nth-child(2n) {
     margin-left: 146px;
   }
