@@ -27,12 +27,12 @@
   flex-grow: 1;
 
   &--email {
-    background: url("../../img/mail.svg") no-repeat calc(100% - 20px) center;
+    background: url("../img/mail.svg") no-repeat calc(100% - 20px) center;
     background-size: 18px;
   }
 
   &--phone {
-    background: url("../../img/phone.svg") no-repeat calc(100% - 17px) center;
+    background: url("../img/phone.svg") no-repeat calc(100% - 17px) center;
     background-size: 21px;
   }
 
