@@ -1,13 +1,11 @@
 //.main-nav {}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
+.main-nav {
+  @media (min-width: $tablet-width) {
     width: 438px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav {
+  @media (min-width: $desktop-width) {
     width: 477px;
   }
 }

@@ -1,14 +1,14 @@
 .textarea {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 34px;
+    padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -35,8 +35,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
-
-    @include font-oswald(20px);
+    font-size: 20px;
     line-height: 1.5;
     padding: 17px 20px;
     min-height: 174px;

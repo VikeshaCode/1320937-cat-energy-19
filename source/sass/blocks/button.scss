@@ -11,7 +11,7 @@
   height: 40px;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald(20px);
+    font-size: 20px;
     line-height: 1;
     width: 283px;
     height: 52px;
@@ -19,6 +19,5 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    height: 52px;
   }
 }

@@ -27,19 +27,18 @@
   flex-grow: 1;
 
   &--email {
-    background: url("/img/mail.svg") no-repeat calc(100% - 20px) center;
+    background: url("../../img/mail.svg") no-repeat calc(100% - 20px) center;
     background-size: 18px;
   }
 
   &--phone {
-    background: url("/img/phone.svg") no-repeat calc(100% - 17px) center;
+    background: url("../../img/phone.svg") no-repeat calc(100% - 17px) center;
     background-size: 21px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 17px 20px;
-
-    @include font-oswald(20px);
+    font-size: 20px;
     line-height: 1;
     height: 52px;
   }

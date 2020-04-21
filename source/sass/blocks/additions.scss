@@ -2,7 +2,7 @@
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 69px;
+    padding-top: 69px;
   }
 }
 
@@ -31,6 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex: 1 1;
+    flex: 1 1 0;
   }
 }

@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include font-oswald(36px);
+    font-size: 36px;
   }
 }
 

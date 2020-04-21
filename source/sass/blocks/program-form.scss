@@ -1,16 +1,13 @@
 .program-form {
-  margin-top: 23px;
-  margin-left: 0;
-  margin-right: 0;
+  padding-top: 23px;
   border: 1px solid $c-gallery;
 
   @media (min-width: $tablet-width) {
-    margin-left: 34px;
-    margin-top: 72px;
+    padding-left: 34px;
+    padding-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     width: 46.7%;
     height: 196px;
     align-self: flex-end;

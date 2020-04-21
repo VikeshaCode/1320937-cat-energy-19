@@ -82,8 +82,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .catalog-item__title br {
+.catalog-item__title br {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
