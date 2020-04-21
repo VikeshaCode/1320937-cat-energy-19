@@ -63,13 +63,15 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-  .advantages__item:nth-child(2n) {
+.advantages__item:nth-child(2n) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-left: 146px;
   }
+}
 
-  .advantages__item:first-child,
-  .advantages__item:first-child + .advantages__item {
+.advantages__item:first-child,
+.advantages__item:first-child + .advantages__item {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-bottom: 87px;
   }
 }

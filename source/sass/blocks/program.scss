@@ -7,6 +7,12 @@
 .program__description {
   line-height: 1.29;
   margin: 20px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 26px;
+  }
 }
 
 .program__title,
@@ -19,42 +25,25 @@
 .program__title {
   font-size: 24px;
   line-height: 1.54;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1.03;
+    margin-top: 45px;
+  }
 }
 
 .program__link {
   font-size: 16px;
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .program__title {
-    font-size: 36px;
-    line-height: 1.03;
-  }
-
-  .program__description {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 26px;
-  }
-
-  .program__link {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-top: 61px;
   }
 
-  .program__divider {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__link {
+  @media (min-width: $desktop-width) {
     margin-top: 36px;
-  }
-
-  .program__title {
-    margin-top: 45px;
   }
 }
 
@@ -64,4 +53,8 @@
   opacity: 0.1;
   background: $c-dark-grey;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
