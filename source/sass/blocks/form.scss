@@ -1,11 +1,13 @@
-//.form {}
+.form {
+  padding: 0 40px;
+}
 
 .form__wrapper {
   margin: 14px 30px 34px 30px;
   width: auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
