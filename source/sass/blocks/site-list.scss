@@ -14,7 +14,7 @@
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    @include font-oswald(18px);
+    font-size: 18px;
     line-height: 1.39;
     color: $c-mine-shaft;
     border: none;
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include font-oswald(20px);
+    font-size: 20px;
     line-height: 1.25;
 
     &:not(:last-child) {
@@ -46,8 +46,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .site-list__item--active {
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     &::after {

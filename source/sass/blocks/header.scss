@@ -19,7 +19,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    display: flex;
     padding: 53px 40px 0 40px;
     border: none;
   }
@@ -40,19 +39,22 @@
   }
 }
 
-
-@media (max-width: $mobile-width-only) {
-  .header--closed .main-nav {
+.header--closed .header__main-nav {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
 
 .header--nojs .header__toogle {
-  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
-.header--nojs .main-nav {
-  display: block;
+.header--nojs .header__main-nav {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 
@@ -105,25 +107,39 @@
   cursor: pointer;
   border: none;
 
-  @media (min-width: $tablet-width) {
-    display: none;
+  .header--closed & {
+    position: absolute;
+    top: 23px;
+    right: 19px;
+    width: 25px;
+    height: 19px;
+    background: url("../img/icon-mobile-menu.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  .header--opened & {
+    position: absolute;
+    top: 23px;
+    right: 22px;
+    width: 19px;
+    height: 19px;
+    background: url("../img/icon-close.svg");
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
-.header--closed .header__toogle {
-  position: absolute;
-  top: 23px;
-  right: 19px;
-  width: 25px;
-  height: 19px;
-  background: url("../img/icon-mobile-menu.svg");
-}
+.header__main-nav {
+  @media (min-width: $tablet-width) {
+    width: 438px;
+  }
 
-.header--opened .header__toogle {
-  position: absolute;
-  top: 23px;
-  right: 22px;
-  width: 19px;
-  height: 19px;
-  background: url("../img/icon-close.svg");
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
 }

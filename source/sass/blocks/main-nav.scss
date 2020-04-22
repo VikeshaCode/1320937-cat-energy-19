@@ -1,14 +1,5 @@
 //.main-nav {}
 
-.main-nav {
-  @media (min-width: $tablet-width) {
-    width: 438px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 477px;
-  }
-}
 
 .main-nav__list {
   display: flex;
