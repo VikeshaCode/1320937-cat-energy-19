@@ -1,18 +1,18 @@
 .form {
-  padding: 0 40px;
-}
-
-.form__wrapper {
-  margin: 14px 30px 34px 30px;
   width: auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 40px;
+    padding: 0 40px;
   }
+}
+
+.form__wrapper {
+  margin-top: 18px;
+  padding: 0 20px;
 }
 
 .form__title {
@@ -51,6 +51,8 @@
 }
 
 .form__container {
+  margin-top: 23px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;

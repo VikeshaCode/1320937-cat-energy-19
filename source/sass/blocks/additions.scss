@@ -1,8 +1,12 @@
 .additions {
-  padding-top: 31px;
+  padding: 0 20px;
+}
+
+.additions__wrapper {
+  margin-top: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 69px;
+    margin-top: 69px;
   }
 }
 
