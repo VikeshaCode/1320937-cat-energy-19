@@ -1,6 +1,6 @@
 .forms {
   @media (min-width: $tablet-width) {
-    padding: 50px 66px 0 38px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -9,13 +9,23 @@
   }
 }
 
+.forms__container {
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .forms__fieldset {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-  }
 }
 
 .forms__legend {
@@ -35,7 +45,12 @@
 }
 
 .forms__button {
-  margin: 34px 20px 23px 20px;
+  margin: 34px 0 23px 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px 0 72px 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;

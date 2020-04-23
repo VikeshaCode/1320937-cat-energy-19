@@ -13,6 +13,11 @@
 .form__wrapper {
   margin-top: 18px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    padding: 0;
+  }
 }
 
 .form__title {
@@ -23,7 +28,6 @@
   @media (min-width: $tablet-width) {
     @include font-oswald(60px);
     line-height: 1;
-    margin-top: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,20 +46,10 @@
     font-size: 20px;
     line-height: 1.5;
     margin-top: 53px;
-    margin-left: 38px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-  }
-}
-
-.form__container {
-  margin-top: 23px;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
   }
 }

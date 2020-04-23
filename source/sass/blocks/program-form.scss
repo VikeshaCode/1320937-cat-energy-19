@@ -1,6 +1,4 @@
 .program-form {
-  border: 1px solid $c-gallery;
-
   @media (min-width: $desktop-width) {
     width: 46.7%;
     height: 196px;
@@ -8,7 +6,20 @@
   }
 }
 
+.program-form__wrapper {
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .program-form__list {
+  border: 1px solid $c-gallery;
   list-style: none;
   padding-left: 20px;
   padding-bottom: 22px;

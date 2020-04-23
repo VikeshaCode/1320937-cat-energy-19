@@ -44,7 +44,7 @@
         </div>
         <section class="forms">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__container">
+            <div class="forms__container">
               <fieldset class="forms__fieldset info-form">
                 <ul class="info-form__list" role="none">
                   <li class="info-form__item">
@@ -68,56 +68,58 @@
                 </ul>
               </fieldset>
               <fieldset class="forms__fieldset program-form">
-                <ul class="program-form__list" role="none">
-                  <li class="program-form__item">
-                    <label class="radio">
-                      <input class="radio__input" type="radio" name="program" value="slim" checked />
-                      <span class="radio__circle">
-                        <div class="radio__check"></div>
-                      </span>
-                      <span class="radio__text">Похудение</span>
-                    </label>
-                  </li>
-                  <li class="program-form__item">
-                    <label class="radio">
-                      <input class="radio__input" type="radio" name="program" value="fat" />
-                      <span class="radio__circle">
-                        <div class="radio__check"></div>
-                      </span>
-                      <span class="radio__text">Набор массы</span>
-                    </label>
-                  </li>
-                  <li class="program-form__item">
-                    <label class="radio">
-                      <input class="radio__input" type="radio" name="program" value="help" />
-                      <span class="radio__circle">
-                        <div class="radio__check"></div>
-                      </span>
-                      <span class="radio__text">Не знаю(Нужен ваш совет)</span>
-                    </label>
-                  </li>
-                </ul>
+                <div class="program-form__wrapper">
+                  <ul class="program-form__list" role="none">
+                    <li class="program-form__item">
+                      <label class="radio">
+                        <input class="radio__input" type="radio" name="program" value="slim" checked />
+                        <span class="radio__circle">
+                          <div class="radio__check"></div>
+                        </span>
+                        <span class="radio__text">Похудение</span>
+                      </label>
+                    </li>
+                    <li class="program-form__item">
+                      <label class="radio">
+                        <input class="radio__input" type="radio" name="program" value="fat" />
+                        <span class="radio__circle">
+                          <div class="radio__check"></div>
+                        </span>
+                        <span class="radio__text">Набор массы</span>
+                      </label>
+                    </li>
+                    <li class="program-form__item">
+                      <label class="radio">
+                        <input class="radio__input" type="radio" name="program" value="help" />
+                        <span class="radio__circle">
+                          <div class="radio__check"></div>
+                        </span>
+                        <span class="radio__text">Не знаю(Нужен ваш совет)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </fieldset>
             </div>
             <fieldset class="forms__fieldset contacts-form">
               <div class="contacts-form__wrapper">
-              <h2 class="contacts-form__title title">
-                <div class="title__name">Контактные данные <br />(владельца кота)</div>
-              </h2>
-              <ul class="contacts-form__list" role="none">
-                <li class="contacts-form__item">
-                  <label class="text-field"
-                    >E-mail:*
-                    <input class="text-field__input text-field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required />
-                  </label>
-                </li>
-                <li class="contacts-form__item">
-                  <label class="text-field"
-                    >Телефон:*
-                    <input class="text-field__input text-field__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required />
-                  </label>
-                </li>
-              </ul>
+                <h2 class="contacts-form__title title">
+                  <div class="title__name">Контактные данные <br />(владельца кота)</div>
+                </h2>
+                <ul class="contacts-form__list" role="none">
+                  <li class="contacts-form__item">
+                    <label class="text-field"
+                      >E-mail:*
+                      <input class="text-field__input text-field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required />
+                    </label>
+                  </li>
+                  <li class="contacts-form__item">
+                    <label class="text-field"
+                      >Телефон:*
+                      <input class="text-field__input text-field__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required />
+                    </label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <label class="textarea">
@@ -127,37 +129,37 @@
 
             <fieldset class="forms__fieldset additions">
               <div class="additions__wrapper">
-              <h2 class="additions__title title">Дополнительно</h2>
-              <ul class="additions__list" role="none">
-                <li class="additions__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="adds" value="sugar" checked />
-                    <span class="checkbox__box"></span>
-                    <span class="checkbox__text">Сахарозаменитель</span>
-                  </label>
-                </li>
-                <li class="additions__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="adds" value="water" />
-                    <span class="checkbox__box"></span>
-                    <span class="checkbox__text">Питьевая вода</span>
-                  </label>
-                </li>
-                <li class="additions__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="adds" value="milk" />
-                    <span class="checkbox__box"></span>
-                    <span class="checkbox__text">Молоко</span>
-                  </label>
-                </li>
-                <li class="additions__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="adds" value="vitamins" />
-                    <span class="checkbox__box"></span>
-                    <span class="checkbox__text">Витамины</span>
-                  </label>
-                </li>
-              </ul>
+                <h2 class="additions__title title">Дополнительно</h2>
+                <ul class="additions__list" role="none">
+                  <li class="additions__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" name="adds" value="sugar" checked />
+                      <span class="checkbox__box"></span>
+                      <span class="checkbox__text">Сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" name="adds" value="water" />
+                      <span class="checkbox__box"></span>
+                      <span class="checkbox__text">Питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" name="adds" value="milk" />
+                      <span class="checkbox__box"></span>
+                      <span class="checkbox__text">Молоко</span>
+                    </label>
+                  </li>
+                  <li class="additions__item">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox" name="adds" value="vitamins" />
+                      <span class="checkbox__box"></span>
+                      <span class="checkbox__text">Витамины</span>
+                    </label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <div class="forms__wrapper">

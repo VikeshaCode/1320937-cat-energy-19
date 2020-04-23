@@ -1,5 +1,9 @@
 .contacts-form {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .contacts-form__wrapper {
@@ -32,6 +36,10 @@
 }
 
 .contacts-form__item {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 46.7%;
   }
