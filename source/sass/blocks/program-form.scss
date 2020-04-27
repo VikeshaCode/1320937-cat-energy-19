@@ -6,29 +6,14 @@
   }
 }
 
-.program-form__wrapper {
-  margin-top: 23px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
-}
-
 .program-form__list {
-  border: 1px solid $c-gallery;
   list-style: none;
-  padding-left: 20px;
-  padding-bottom: 22px;
-  padding-top: 12px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 28px;
-  }
 }
 
-//.program-form__item {
-//}
+.program-form__item {
+  margin-top: 14px;
+}
+
+.program-form__item:first-child {
+  margin-top: 0;
+}
