@@ -1,13 +1,23 @@
 .program-form {
-  margin-top: 23px;
-  margin-left: 0;
-  margin-right: 0;
-  border: 1px solid $c-gallery;
+  @media (min-width: $desktop-width) {
+    width: 46.7%;
+    height: 196px;
+    align-self: flex-end;
+  }
 }
 
 .program-form__list {
   list-style: none;
 }
 
-//.program-form__item {
-//}
+.program-form__item {
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
+}
+
+.program-form__item:first-child {
+  margin-top: 0;
+}

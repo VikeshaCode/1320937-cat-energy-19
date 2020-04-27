@@ -1,17 +1,43 @@
 .additions {
-  margin-top: 31px;
-}
+  padding: 0 20px;
 
-//.additional__title {}
-//.additional__item {}
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
 
 .additions__list {
   list-style: none;
   margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 62px;
+    max-width: 1219px;
+  }
 }
 
-.additions__divider {
-  width: 136px;
-  height: 3px;
-  background-color: $c-green;
+.additions__item {
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    flex: 1 1 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 1 0;
+    padding: 0;
+  }
+}
+
+.additions__item:first-child,
+.additions__item:first-child + .additions__item {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

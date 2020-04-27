@@ -1,0 +1,10 @@
+.main-index {
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    padding-bottom: 65px;
+  }
+}

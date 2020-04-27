@@ -1,13 +1,26 @@
 .form {
-  margin: 30px 20px 34px 22px;
-}
+  width: auto;
 
-//.form__wrapper {}
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
+}
 
 .form__title {
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font-oswald(60px);
+    line-height: 1;
+    padding: 0;
+  }
 }
 
 .form__text {
@@ -15,5 +28,30 @@
   line-height: 1.29;
   text-transform: uppercase;
   color: $c-cod-grey;
-  margin-top: 35px;
+  margin-top: 25px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 53px;
+    margin-left: 40px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.form__forms {
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
 }

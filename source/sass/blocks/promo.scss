@@ -1,5 +1,19 @@
 .promo {
-  background: url("../img/gift-photo-mobile@1x.jpg") 0 center no-repeat, url("/img/icon-gift.svg") 0 center no-repeat;
+  background: url("../img/icon-gift.svg") 113px 65px no-repeat, url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  width: 280px;
+  height: 289px;
+  background-size: 56px 61px, 280px 289px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-right: 0;
+  }
 }
 
 .promo__title {
@@ -7,4 +21,7 @@
   line-height: 1.25;
   color: $c-white;
   text-align: center;
+  position: absolute;
+  bottom: 43px;
+  left: 60px;
 }

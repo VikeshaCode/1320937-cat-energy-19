@@ -1,12 +1,38 @@
 .contacts-form {
-  margin-top: 31px;
-}
+  padding: 0 20px;
 
-//.contacts-form__title {}
-//.contacts-form__item {}
-//.contacts-form__divider {}
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
 
 .contacts-form__list {
   list-style: none;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts-form__item {
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46.7%;
+    margin-top: 0;
+  }
+}
+
+.contacts-form__item:first-child {
+  margin-top: 0;
 }

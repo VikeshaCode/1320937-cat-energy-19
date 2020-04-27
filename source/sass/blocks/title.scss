@@ -1,4 +1,32 @@
 .title {
   @include font-oswald(24px);
   color: $c-cod-grey;
+  display: flex;
+
+  &::after {
+    content: "";
+    height: 3px;
+    background-color: $c-green;
+    width: 100%;
+    right: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-left: 24px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.title__name {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.title__name br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

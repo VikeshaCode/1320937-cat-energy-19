@@ -3,10 +3,8 @@
 .icon-list__img {
   width: 148px;
   height: 60px;
-  background: $c-green;
+  background: $c-green no-repeat center;
   margin-right: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   &--leaf {
     background-image: url("../img/advantage-leaf.png");

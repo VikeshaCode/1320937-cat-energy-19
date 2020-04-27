@@ -3,6 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     position: relative;
   }
 
@@ -67,6 +68,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin: 0;
     padding: 0;
   }
 }

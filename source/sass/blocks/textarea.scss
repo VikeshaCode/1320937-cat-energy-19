@@ -1,8 +1,8 @@
-//.textarea {}
-
-.textarea__text {
-  padding-top: 31px;
+.textarea {
+  display: flex;
+  flex-direction: column;
 }
+
 
 .textarea__field {
   @include font-oswald(16px);
@@ -12,6 +12,17 @@
   border: 1px solid rgba($c-silver, 0.5);
   min-height: 150px;
   margin-top: 31px;
+  padding: 15px;
+  flex-grow: 1;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 17px 20px;
+    min-height: 174px;
+  }
 }
 
 .textarea__divider {

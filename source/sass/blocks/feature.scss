@@ -1,8 +1,22 @@
 //.feature {}
-//.feature__item {}
 
 .feature__list {
-  font-size: 12px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__item {
+  font-size: 12px;
   line-height: 1.29;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $c-silver;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 16px;
+    line-height: 1;
+  }
 }

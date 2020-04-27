@@ -1,9 +1,61 @@
 //.product {}
-//.product__feature {}
-//.product__button {}
 
 .product__title {
   @include font-oswald(16px);
   color: $c-mine-shaft;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
+}
+
+.product__feature {
+  font-size: 14px;
+  line-height: 1.25;
+  margin-top: 15px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin: 0;
+    width: 224px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+  }
+}
+
+.product__feature span:first-child {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    width: 59%;
+  }
+}
+
+.product__button {
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 40px;
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 40px;
+    margin: 0;
+  }
 }

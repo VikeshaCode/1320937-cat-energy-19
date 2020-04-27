@@ -1,0 +1,16 @@
+.main-catalog {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 76px;
+  }
+}
+
+.main-catalog__additional {
+  padding: 31px 20px 35px 20px;
+}
+
+.main-catalog__promo {
+  padding-top: 39px;
+}
