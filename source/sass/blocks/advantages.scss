@@ -4,15 +4,13 @@
   padding: 0 20px 33px 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 51px auto 55px auto;
+    width: 100%;
+    padding: 51px 30px 55px 30px;
     border-bottom: 1px solid $c-silver;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 58px 0 0 0;
-    padding: 0 40px;
-    width: 100%;
+    padding: 58px 40px 0 40px;
     border: none;
   }
 }
@@ -21,7 +19,7 @@
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -61,6 +59,10 @@
     flex-direction: column;
     margin: 0;
   }
+}
+
+.advantages__item:first-child {
+  margin-top: 0;
 }
 
 .advantages__item:nth-child(2n) {
