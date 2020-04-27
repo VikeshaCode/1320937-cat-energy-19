@@ -66,6 +66,14 @@
   padding-bottom: 31px;
   margin: 0 auto;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;

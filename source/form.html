@@ -15,7 +15,7 @@
         <a class="header__logo" href="index.html">
           <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
           <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" width="174" height="59" alt="Логотип функционального питания для котов Cat energy" />
-          <img class="header__logo-image header__logo-image--desktop" src="img/logo-desktop.svg" width="203" height="60" alt="Логотип функционального питания для котов Cat energy" />
+          <img class="header__logo-image header__logo-image--desktop" src="img/logo-adaptive.svg" width="203" height="60" alt="Логотип функционального питания для котов Cat energy" />
         </a>
         <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -207,9 +207,11 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__link-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии" />
+            <p class="copyright__link-text">HTML Academy</p>
+            <svg class="copyright__link-logo" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            </svg>
           </a>
         </div>
       </div>

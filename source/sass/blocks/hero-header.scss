@@ -1,6 +1,6 @@
 .hero-header {
   color: $c-white;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background: $c-green url("../img/index-background-mobile@1x.jpg") center no-repeat;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -33,6 +33,22 @@
     left: 624px;
     top: -120px;
     z-index: -1;
+  }
+}
+
+.hero-header__block {
+  height: 305px;
+}
+
+.hero-header__wrapper:first-child {
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+  }
+}
+
+.hero-header__wrapper:last-child {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
   }
 }
 
@@ -135,15 +151,5 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 53px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .hero-header__wrapper:first-child {
-    z-index: 0;
-  }
-
-  .hero-header__wrapper:last-child {
-    z-index: 1;
   }
 }
