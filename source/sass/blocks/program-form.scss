@@ -12,6 +12,10 @@
 
 .program-form__item {
   margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 }
 
 .program-form__item:first-child {

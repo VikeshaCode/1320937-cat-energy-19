@@ -19,10 +19,7 @@
   @media (min-width: $tablet-width) {
     @include font-oswald(60px);
     line-height: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 71px;
+    padding: 0;
   }
 }
 
@@ -39,6 +36,7 @@
     line-height: 1.5;
     margin-top: 53px;
     margin-left: 40px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +48,10 @@
   margin-top: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 42px;
+    margin-top: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
   }
 }
