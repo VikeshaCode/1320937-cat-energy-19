@@ -14,7 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 62px;
-    //min-width: 536px;
     max-width: 1219px;
   }
 }
@@ -37,6 +36,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 32px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
