@@ -6,20 +6,6 @@
   }
 }
 
-.contacts-form__wrapper {
-  margin-top: 31px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 45px;
-  }
-}
-
-.contacts-form__title {
-  margin-top: 31px;
-}
-
-//.contacts-form__divider {}
-
 .contacts-form__list {
   list-style: none;
   margin-top: 30px;
@@ -31,16 +17,22 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 48px;
   }
 }
 
 .contacts-form__item {
+  margin-top: 14px;
+
   @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 46.7%;
+    margin-top: 0;
   }
+}
+
+.contacts-form__item:first-child {
+  margin-top: 0;
 }

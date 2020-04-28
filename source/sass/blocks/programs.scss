@@ -1,6 +1,10 @@
 .programs {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     padding: 55px 40px 0 40px;
@@ -26,6 +30,9 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 81px 62px 62px 52px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +41,10 @@
     width: 570px;
     min-height: 372px;
   }
+}
+
+.programs__item:first-child {
+  margin-top: 0;
 }
 
 .programs__wrapper {

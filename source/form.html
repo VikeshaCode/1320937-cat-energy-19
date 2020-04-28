@@ -33,19 +33,17 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main-form">
       <section class="form">
-        <div class="form__wrapper">
           <h1 class="form__title">Подбор программы</h1>
           <p class="form__text">
             Заполните анкету и мы подберем<br />
             программу питания для вашего кота
           </p>
-        </div>
-        <section class="forms">
+        <section class="form__forms forms">
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="forms__container">
-              <fieldset class="forms__fieldset info-form">
+              <fieldset class="forms__info-form info-form">
                 <ul class="info-form__list" role="none">
                   <li class="info-form__item">
                     <label class="text-field"
@@ -67,8 +65,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="forms__fieldset program-form">
-                <div class="program-form__wrapper">
+              <fieldset class="forms__program-form program-form">
                   <ul class="program-form__list" role="none">
                     <li class="program-form__item">
                       <label class="radio">
@@ -98,11 +95,9 @@
                       </label>
                     </li>
                   </ul>
-                </div>
               </fieldset>
             </div>
-            <fieldset class="forms__fieldset contacts-form">
-              <div class="contacts-form__wrapper">
+            <fieldset class="forms__contacts-form contacts-form">
                 <h2 class="contacts-form__title title">
                   <div class="title__name">Контактные данные <br />(владельца кота)</div>
                 </h2>
@@ -120,15 +115,13 @@
                     </label>
                   </li>
                 </ul>
-              </div>
             </fieldset>
-            <label class="textarea">
-              <div class="textarea__text title">Комментарий</div>
+            <label class="forms__textarea textarea">
+              <div class="textarea__title title">Комментарий</div>
               <textarea class="textarea__field" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
 
-            <fieldset class="forms__fieldset additions">
-              <div class="additions__wrapper">
+            <fieldset class="forms__additions additions">
                 <h2 class="additions__title title">Дополнительно</h2>
                 <ul class="additions__list" role="none">
                   <li class="additions__item">
@@ -160,9 +153,8 @@
                     </label>
                   </li>
                 </ul>
-              </div>
             </fieldset>
-            <div class="forms__wrapper">
+            <div class="forms__button-wrapper">
               <button class="forms__button button" type="submit">Отправить заявку</button>
               <small class="forms__legend"> <sup>*</sup> — Обязательные поля </small>
             </div>

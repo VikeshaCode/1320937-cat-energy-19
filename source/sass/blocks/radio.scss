@@ -4,14 +4,12 @@
   color: $c-mine-shaft;
   text-transform: uppercase;
   display: flex;
-  padding-top: 14px;
   overflow: hidden;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     @include font-oswald(20px);
     line-height: 1;
-    padding-top: 13px;
   }
 }
 

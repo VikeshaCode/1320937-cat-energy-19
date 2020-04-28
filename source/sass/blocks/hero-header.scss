@@ -8,7 +8,6 @@
 
   @media (min-width: $tablet-width) {
     background: $c-white;
-    margin-top: 61px;
     padding: 0 120px;
     width: 100%;
   }
@@ -16,7 +15,7 @@
   @media (min-width: $desktop-width) {
     min-height: 595px;
     margin: 0;
-    padding: 107px 84px;
+    //padding: 107px 84px;
     flex-direction: row;
     background: transparent;
     position: relative;
@@ -30,8 +29,8 @@
     width: 720px;
     height: 696px;
     position: absolute;
-    left: 624px;
-    top: -120px;
+    left: 651px;
+    top: -221px;
     z-index: -1;
   }
 }
