@@ -18,25 +18,25 @@
                 fill: #444444;
               }
 
-              .header__logo-wings {
-                display: none;
-              }
+<!--              .header__logo-wings {-->
+<!--                display: none;-->
+<!--              }-->
 
-              @media (min-width: 768px) {
-                .header__logo-wings {
-                  display: inline-block;
-                }
-              }
+<!--              @media (min-width: 768px) {-->
+<!--                .header__logo-wings {-->
+<!--                  display: inline-block;-->
+<!--                }-->
+<!--              }-->
 
-              .header__logo-rays {
-                display: none;
-              }
+<!--              .header__logo-rays {-->
+<!--                display: none;-->
+<!--              }-->
 
-              @media (min-width: 1300px) {
-                .header__logo-rays {
-                  display: inline-block;
-                }
-              }
+<!--              @media (min-width: 1300px) {-->
+<!--                .header__logo-rays {-->
+<!--                  display: inline-block;-->
+<!--                }-->
+<!--              }-->
     </style>
 
   <g class="header__logo-cat">
