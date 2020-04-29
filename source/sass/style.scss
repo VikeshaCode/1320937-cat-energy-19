@@ -53,8 +53,8 @@ body {
   background-color: $c-white;
 }
 
-@media (min-width: $desktop-width) {
-  .container {
+.container {
+  @media (min-width: $desktop-width) {
     width: 1300px;
     margin: 0 auto;
   }
