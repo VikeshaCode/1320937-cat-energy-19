@@ -62,45 +62,7 @@
 //.header__logo {}
 
 .header__logo-image {
-  &--mobile {
-    height: 39px;
-  }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .header__logo-image--mobile {
-    display: none;
-  }
-
-  .header__logo-image--desktop {
-    display: none;
-  }
-
-  .header__logo-image--tablet {
-    display: inline-block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__logo-image--mobile {
-    display: none;
-  }
-
-  .header__logo-image--tablet {
-    display: none;
-  }
-
-  .header__logo-image--desktop {
-    display: initial;
-  }
+  height: 39px;
 }
 
 .header__toogle {
