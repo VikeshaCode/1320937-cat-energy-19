@@ -22,7 +22,6 @@
     margin: 0;
     flex-direction: row;
     background: transparent;
-    position: relative;
   }
 }
 
@@ -33,9 +32,8 @@
     width: 720px;
     height: 696px;
     position: absolute;
-    left: 651px;
-    //top: -221px;
-    top: -20px;
+    left: 641px;
+    top: -3px;
     z-index: -1;
     background-size: cover;
   }

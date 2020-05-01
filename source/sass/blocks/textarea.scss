@@ -1,6 +1,5 @@
 
 .textarea__field {
-  width: 100%;
   @include font-oswald(16px);
   line-height: 1.13;
   color: $c-dark-grey;
@@ -11,6 +10,7 @@
   padding: 15px;
   flex-grow: 1;
   white-space: nowrap;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
