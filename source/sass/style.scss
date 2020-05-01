@@ -40,6 +40,10 @@
   box-sizing: border-box;
 }
 
+body, main {
+  overflow-x: hidden;
+}
+
 body {
   min-width: 320px;
   margin: 0;

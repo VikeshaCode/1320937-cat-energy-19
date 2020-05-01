@@ -9,6 +9,7 @@
 .additional__title {
   white-space: nowrap;
   margin-bottom: 30px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding-left: 37px;

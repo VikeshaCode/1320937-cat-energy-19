@@ -21,13 +21,23 @@
 .additions__item {
   padding-bottom: 12px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex: 1 1 50%;
   }
 
   @media (min-width: $desktop-width) {
-    flex: 1 1 0;
     padding: 0;
+    width: 325px;
+
+    &:last-child {
+      width: 200px;
+    }
+  }
+}
+
+.additions__item:nth-child(2n) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex: 1 1 44%;
   }
 }
 
