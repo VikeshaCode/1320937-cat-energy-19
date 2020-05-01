@@ -20,7 +20,6 @@
   @media (min-width: $desktop-width) {
     min-height: 595px;
     margin: 0;
-    //padding: 107px 84px;
     flex-direction: row;
     background: transparent;
     position: relative;
@@ -35,8 +34,10 @@
     height: 696px;
     position: absolute;
     left: 651px;
-    top: -221px;
+    //top: -221px;
+    top: -20px;
     z-index: -1;
+    background-size: cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

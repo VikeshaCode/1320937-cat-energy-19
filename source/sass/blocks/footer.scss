@@ -53,8 +53,6 @@
 }
 
 .footer__copyright {
-  display: flex;
-  justify-content: space-between;
   margin-top: 31px;
 
   @media (min-width: $tablet-width) {
@@ -62,9 +60,15 @@
   }
 }
 
+.footer__link {
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+
 .footer__logo {
-  padding-bottom: 31px;
-  margin: 0 auto;
+  fill: #111111;
 
   &:hover {
     opacity: 0.8;

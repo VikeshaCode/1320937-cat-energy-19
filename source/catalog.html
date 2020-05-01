@@ -343,19 +343,19 @@
             </div>
 
             <section class="main-catalog__promo promo">
+              <img class="promo__icon" src="img/icon-gift.svg" width="56" height="61" alt="Иконка в виде подарка">
               <p class="promo__text">
                 Закажите все<br />
                 и получите чехол для<br />
                 кота в подарок!
               </p>
-              <img class="promo__icon" src="img/icon-gift.svg" width="56" height="61" alt="Иконка в виде подарка">
             </section>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <div class="footer__contacts footer__contacts--grey contacts">
+        <div class="footer__contacts contacts">
           <p class="contacts__promo">
             приглашаем<br />
             к сотрудничеству<br />
@@ -367,25 +367,45 @@
           </p>
         </div>
         <div class="contacts__picture">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587742724957!5m2!1sru!2sru"
+            width="320"
+            height="400"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+          </iframe>
           <!--      <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель на карте"/>-->
         </div>
         <div class="footer__wrapper">
-          <img class="footer__logo" src="img/footer-logo.svg" width="128" height="24" alt="Логотип функционального питания для котов Cat energy" />
+          <a class="footer__link" href="index.html">
+            <svg class="footer__logo" width="128" height="24">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-                  <img src="img/m-vk.svg" width="22" height="12" alt="Иконка Вконтакте" />
+                  <svg class="social__link-icon" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-                  <img src="img/m-insta.svg" width="17" height="17" alt="Иконка Инстаграма" />
+                  <svg class="social__link-icon" width="17" height="17">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-                  <img src="img/m-fb.svg" width="10" height="19" alt="Иконка Фейсбука" />
+                  <svg class="social__link-icon" width="10" height="19">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
