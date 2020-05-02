@@ -19,7 +19,6 @@
 
   @media (min-width: $desktop-width) {
     min-height: 595px;
-    margin: 0;
     flex-direction: row;
     background: transparent;
   }
@@ -42,7 +41,6 @@
     background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
-
 
 .hero-header__wrapper:first-child {
   @media (min-width: $tablet-width) {
