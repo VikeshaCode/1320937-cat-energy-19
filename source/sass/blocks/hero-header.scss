@@ -92,12 +92,16 @@
 
 .hero-header__image {
   margin: 29px 20px 3px 20px;
+  width: 280px;
+  height: 271px;
 
   @media (min-width: $tablet-width) {
     display: initial;
     margin-left: -90px;
     margin-top: -80px;
     z-index: 0;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {

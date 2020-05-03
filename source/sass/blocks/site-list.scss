@@ -66,3 +66,19 @@
     }
   }
 }
+
+.site-list__item--active-white {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -9px;
+      height: 2px;
+      background: $c-white;
+    }
+  }
+}

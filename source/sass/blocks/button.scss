@@ -20,4 +20,13 @@
   @media (min-width: $desktop-width) {
     width: 568px;
   }
+
+  &:hover {
+    background-color: $c-grass;
+  }
+
+  &:active {
+    background-color: $c-grass;
+    color: rgba($c-white, 0.3);
+  }
 }
