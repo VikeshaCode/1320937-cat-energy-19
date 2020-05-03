@@ -22,7 +22,9 @@
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    flex: 1 1 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +39,9 @@
 
 .additions__item:nth-child(2n) {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    flex: 1 1 44%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 44%;
   }
 }
 
