@@ -1,13 +1,32 @@
 //.copyright {}
-//.copyright__link-logo {}
 
-.copyright__text {
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    &:hover .copyright__link-logo {
+      fill: $c-green;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__link-text {
   font-size: 16px;
   color: $c-dark-grey;
 }
 
-.copyright__link {
-  text-decoration: none;
+.copyright__link-logo {
+  width: 27px;
+  height: 34px;
+  fill: $c-brownish-grey;
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;

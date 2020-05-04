@@ -58,6 +58,14 @@
   }
 }
 
+.forms__contacts-form,
+.forms__additions,
+.forms__textarea {
+  .title {
+    display: inline-block;
+  }
+}
+
 .forms__textarea {
   padding: 31px 20px 0 20px;
 

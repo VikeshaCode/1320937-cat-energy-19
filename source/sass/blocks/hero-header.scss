@@ -1,10 +1,15 @@
 .hero-header {
   color: $c-white;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") top center no-repeat;
+  background-size: 320px 305px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background: $c-white;
@@ -14,11 +19,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 595px;
-    margin: 0;
-    //padding: 107px 84px;
     flex-direction: row;
     background: transparent;
-    position: relative;
   }
 }
 
@@ -29,9 +31,26 @@
     width: 720px;
     height: 696px;
     position: absolute;
-    left: 651px;
-    top: -221px;
+    left: 641px;
+    top: -3px;
     z-index: -1;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+  }
+}
+
+.hero-header__wrapper:first-child {
+  @media (min-width: $tablet-width) {
+    z-index: 0;
+  }
+}
+
+.hero-header__wrapper:last-child {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
   }
 }
 
@@ -72,39 +91,26 @@
 }
 
 .hero-header__image {
-  &--mobile {
-    margin: 29px 20px 3px 20px;
+  margin: 29px 20px 3px 20px;
+  width: 280px;
+  height: 271px;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: initial;
+    margin-left: -90px;
+    margin-top: -80px;
+    z-index: 0;
+    width: 100%;
+    height: auto;
   }
 
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: initial;
-      margin-left: -90px;
-      margin-top: -80px;
-      z-index: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: initial;
-      margin-top: -82px;
-      margin-left: -27px;
-    }
+  @media (min-width: $desktop-width) {
+    display: initial;
+    margin-top: -82px;
+    margin-left: -27px;
   }
 }
+
 
 .hero-header__button {
   font-size: 14px;
@@ -134,15 +140,5 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 53px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .hero-header__wrapper:first-child {
-    z-index: 0;
-  }
-
-  .hero-header__wrapper:last-child {
-    z-index: 1;
   }
 }

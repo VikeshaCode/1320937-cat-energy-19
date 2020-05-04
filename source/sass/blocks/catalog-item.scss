@@ -1,14 +1,16 @@
 .catalog-item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   width: auto;
   border-bottom: 1px solid $c-gallery;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: 45.8%;
+    height: 431px;
     background: $c-light-grey;
-    margin-bottom: 58px;
+    margin-bottom: 141px;
     padding: 0 37px 40px 38px;
   }
 
@@ -32,6 +34,15 @@
   }
 }
 
+.catalog-item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.catalog-item:nth-last-child(-n+4) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
 
 .catalog-item__wrapper {
   width: 50%;
@@ -41,6 +52,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding: 0;
   }
 
   &--adds {
@@ -51,7 +63,7 @@
       width: 167px;
       padding: 0;
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 55px;
     }
   }
 }
@@ -67,15 +79,21 @@
     font-size: 20px;
     line-height: 1;
     text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 126px;
-    margin-right: 0;
+    width: 130px;
     align-self: center;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+
   &--adds {
+    @media (min-width: $tablet-width) {
+      width: 134px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 100%;
     }
@@ -83,7 +101,7 @@
 }
 
 .catalog-item__title br {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -139,10 +157,30 @@
   margin-top: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 28px;
+    margin-top: 21px;
   }
 }
 
 .catalog-item__picture {
-  width: 50%;
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    height: 174px;
+    margin-top: -72px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    height: 172px;
+  }
+}
+
+.catalog-item:nth-child(2n) .catalog-item__picture {
+  @media (min-width: $tablet-width) {
+    height: 208px;
+    margin-top: -106px;
+  }
 }

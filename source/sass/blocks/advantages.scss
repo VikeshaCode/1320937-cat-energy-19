@@ -52,12 +52,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    width: 244px;
+    width: 245px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    margin: 0;
   }
 }
 
@@ -67,13 +67,13 @@
 
 .advantages__item:nth-child(2n) {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-left: 146px;
+    margin-left: 140px;
   }
 }
 
 .advantages__item:first-child,
 .advantages__item:first-child + .advantages__item {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-bottom: 87px;
+    margin-bottom: 128px;
   }
 }

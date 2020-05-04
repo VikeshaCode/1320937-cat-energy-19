@@ -18,6 +18,15 @@
 
 .social__link {
   text-decoration: none;
+  fill: $c-brownish-grey;
+
+  &:hover {
+    fill: $c-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__list {
