@@ -111,6 +111,16 @@
     background-color: $c-light-grey;
     color: $c-dark-grey;
     margin-top: 22px;
+    outline: none;
+
+    &:hover {
+      background-color: $c-dark-gallery;
+    }
+
+    &:active {
+      background-color: $c-dark-gallery;
+      color: rgba($c-dark-grey, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {

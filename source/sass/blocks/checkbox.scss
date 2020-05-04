@@ -7,6 +7,10 @@
   overflow: hidden;
   cursor: pointer;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
@@ -18,7 +22,8 @@
 }
 
 .checkbox__input:checked + .checkbox__box {
-  background: url("../img/icon-tick.svg") no-repeat 1px 2px;
+  background: url("../img/icon-tick.svg") no-repeat 8px 11px;
+  background-size: 22px 17px;
 }
 
 .checkbox__box {
@@ -26,6 +31,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid $c-silver;
+
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -38,4 +44,8 @@
   overflow: hidden;
   padding-top: 8px;
   padding-left: 16px;
+}
+
+.checkbox:hover .checkbox__box {
+  border: 1px solid $c-dark-silver;
 }
