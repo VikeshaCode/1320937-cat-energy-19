@@ -1,5 +1,5 @@
 .advantages {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding: 0 20px 33px 20px;
 
@@ -52,8 +52,9 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    width: 245px;
+    width: 50%;
     margin: 0;
+    padding-right: 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,13 +68,13 @@
 
 .advantages__item:nth-child(2n) {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-left: 140px;
+    padding-left: 27px;
   }
 }
 
 .advantages__item:first-child,
 .advantages__item:first-child + .advantages__item {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-bottom: 128px;
+    margin-bottom: 129px;
   }
 }

@@ -1,9 +1,12 @@
 .site-list {
   list-style: none;
+  border: 1px solid $c-light-grey;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     flex-wrap: wrap;
+    border: none;
   }
 }
 
@@ -16,7 +19,6 @@
   padding-top: 24px;
   padding-bottom: 20px;
   border-top: 1px solid $c-light-grey;
-  width: 320px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

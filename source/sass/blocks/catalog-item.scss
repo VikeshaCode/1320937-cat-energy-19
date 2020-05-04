@@ -45,10 +45,10 @@
 }
 
 .catalog-item__wrapper {
-  width: 50%;
   padding-top: 25px;
   display: flex;
   flex-direction: column;
+  width: 141px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -107,6 +107,8 @@
 }
 
 .catalog-item__button {
+  margin: 0 auto;
+
   &--grey {
     background-color: $c-light-grey;
     color: $c-dark-grey;

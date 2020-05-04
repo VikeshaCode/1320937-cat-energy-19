@@ -1,5 +1,3 @@
-//.product {}
-
 .product__title {
   @include font-oswald(16px);
   color: $c-mine-shaft;
@@ -43,7 +41,7 @@
 }
 
 .product__button {
-  margin-top: 14px;
+  margin: 14px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;

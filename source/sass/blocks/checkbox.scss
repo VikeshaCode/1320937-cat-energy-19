@@ -22,8 +22,12 @@
 }
 
 .checkbox__input:checked + .checkbox__box {
-  background: url("../img/icon-tick.svg") no-repeat 8px 11px;
+  background: url("../img/icon-tick.svg") no-repeat 5px 4px;
   background-size: 22px 17px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 8px 11px;
+  }
 }
 
 .checkbox__box {
