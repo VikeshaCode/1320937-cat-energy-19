@@ -68,12 +68,6 @@
   }
 }
 
-.example__picture {
-  width: 320px;
-  height: 240px;
-  margin-top: 44px;
-}
-
 .example__list {
   list-style: none;
   margin-top: 27px;
@@ -255,5 +249,37 @@
     position: absolute;
     top: 13px;
     left: 12px;
+  }
+}
+
+.example__picture-container {
+  @media (min-width: $tablet-width) {
+    width: 636px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.example__picture {
+  width: 320px;
+  height: 240px;
+  margin-top: 44px;
+}
+
+.example__picture--fat {
+  @media (min-width: $tablet-width) {
+    width: 365px;
+    height: 499px;
+    background-image: url("../img/before-desktop@1x.png");
+    background-position: -6px;
+  }
+}
+
+.example__picture--fit {
+  @media (min-width: $tablet-width) {
+    width: 271px;
+    height: 517px;
+    background-image: url("../../img/after-desktop@1x.png");
+    background-position: -79%;
   }
 }
