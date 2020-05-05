@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 }
 
@@ -11,8 +12,9 @@
   background: $c-green no-repeat center;
   margin-right: 20px;
 
+
   &--leaf {
-    background-image: url("../advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
     background-size: 50px 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -58,3 +60,70 @@
     margin-top: 34px;
   }
 }
+
+.icon-list__img--leaf::after {
+  @media (min-width: $tablet-width) {
+    @include font-oswald(281px);
+    content: "1";
+    position: absolute;
+    top: -109px;
+    left: 117px;
+    width: 71px;
+    height: 228px;
+    color: $c-light-grey;
+    z-index: -1;
+  }
+}
+
+.icon-list__img--glass::after {
+  @media (min-width: $tablet-width) {
+    @include font-oswald(281px);
+    content: "2";
+    position: absolute;
+    top: -109px;
+    left: 140px;
+    width: 114px;
+    height: 230px;
+    color: $c-light-grey;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -109px;
+    left: 117px;
+  }
+}
+
+.icon-list__img--cutler::after {
+  @media (min-width: $tablet-width) {
+    @include font-oswald(281px);
+    content: "3";
+    position: absolute;
+    top: -109px;
+    left: 117px;
+    width: 113px;
+    height: 233px;
+    color: $c-light-grey;
+    z-index: -1;
+  }
+}
+
+.icon-list__img--clock::after {
+  @media (min-width: $tablet-width) {
+    @include font-oswald(281px);
+    content: "4";
+    position: absolute;
+    top: -109px;
+    left: 143px;
+    width: 121px;
+    height: 228px;
+    color: $c-light-grey;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -109px;
+    left: 117px;
+  }
+}
+
