@@ -291,6 +291,14 @@
     height: 499px;
     background-image: url("../img/before-tablet@1x.png");
     background-position: -6px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      width: 338px;
+      height: 499px;
+      background-position: -6px;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -298,6 +306,14 @@
     background-position: -6px;
     width: 365px;
     height: 499px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-desktop@2x.png");
+      background-position: -6px;
+      width: 365px;
+      height: 499px;
+      background-size: cover;
+    }
   }
 }
 
@@ -307,6 +323,14 @@
     height: 517px;
     background-image: url("../img/after-tablet@1x.png");
     background-position: -88%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-position: -88%;
+      width: 298px;
+      height: 517px;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -314,5 +338,13 @@
     background-position: -79%;
     width: 271px;
     height: 517px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png");
+      background-position: -79%;
+      width: 271px;
+      height: 517px;
+      background-size: cover;
+    }
   }
 }
