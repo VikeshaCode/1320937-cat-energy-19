@@ -201,7 +201,8 @@
 }
 
 .program__divider {
-  width: 240px;
+  min-width: 240px;
+  width: auto;
   height: 1px;
   opacity: 0.1;
   background: $c-dark-grey;

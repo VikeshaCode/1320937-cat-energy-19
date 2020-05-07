@@ -47,12 +47,15 @@
   font-stretch: normal;
   text-align: center;
   margin-top: 29px;
+  padding-right: 35px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include font-oswald(60px);
     color: $c-cod-grey;
     text-align: left;
     margin: 0;
+    padding: 0;
   }
 }
 

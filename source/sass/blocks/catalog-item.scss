@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: auto;
+  width: 100%;
   border-bottom: 1px solid $c-gallery;
-  padding-bottom: 25px;
+  padding: 0 20px 25px 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 45.8%;
@@ -113,7 +114,6 @@
     background-color: $c-light-grey;
     color: $c-dark-grey;
     margin-top: 22px;
-    outline: none;
 
     &:hover {
       background-color: $c-dark-gallery;
@@ -128,14 +128,15 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.25;
-    width: 249px;
+    min-width: 249px;
+    width: 100%;
     height: 40px;
-    margin-top: 33px;
+    margin: 33px auto 0 auto;
     align-self: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
+    min-width: 169px;
     height: 40px;
   }
 }
