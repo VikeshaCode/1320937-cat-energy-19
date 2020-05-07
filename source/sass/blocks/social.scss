@@ -1,20 +1,11 @@
 .social {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
-
-//.social__item {
-//  &--vkontakte {
-//  }
-//
-//  &--instagram {
-//  }
-//
-//  &--facebook {
-//  }
-//}
-
-//.footer__copyright {}
 
 .social__link {
   text-decoration: none;
@@ -34,5 +25,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 125px;
+  width: 45%;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+  }
 }

@@ -1,6 +1,7 @@
 .program {
   background: $c-light-grey;
   position: relative;
+  width: 100%;
 
   &--slim::before {
     content: "";
@@ -12,11 +13,12 @@
     top: 25px;
     left: 21px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       width: 200px;
       height: 200px;
       top: 93px;
-      left: 448px;
+      left: 91%;
+      transform: translate(-100%);
     }
 
     @media (min-width: $desktop-width) {
@@ -37,11 +39,12 @@
     top: 24px;
     left: 29px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width)  and (max-width: $tablet-width-only) {
       width: 141px;
       height: 194px;
       top: 80px;
-      left: 478px;
+      left: 87%;
+      transform: translate(-100%);
     }
 
     @media (min-width: $desktop-width) {
@@ -62,11 +65,12 @@
     top: 23px;
     left: 21px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       width: 200px;
       height: 200px;
       top: 93px;
-      left: 450px;
+      left: 91%;
+      transform: translate(-100%);
     }
 
     @media (min-width: $desktop-width) {
@@ -87,11 +91,12 @@
     top: 34px;
     left: 12px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       width: 268px;
       height: 113px;
       top: 136px;
-      left: 414px;
+      left: 96%;
+      transform: translate(-100%);
     }
 
     @media (min-width: $desktop-width) {
@@ -100,6 +105,12 @@
       top: 69px;
       left: 35px;
     }
+  }
+}
+
+.program__wrapper:first-child {
+  @media (min-width: $tablet-width)  and (max-width: $tablet-width-only) {
+    width: 58.5%;
   }
 }
 
@@ -112,6 +123,7 @@
     line-height: 1.5;
     margin-top: 26px;
     margin-bottom: 55px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -189,7 +201,8 @@
 }
 
 .program__divider {
-  width: 240px;
+  min-width: 240px;
+  width: auto;
   height: 1px;
   opacity: 0.1;
   background: $c-dark-grey;

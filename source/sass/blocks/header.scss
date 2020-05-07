@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
-  border-bottom: 1px solid $c-light-grey;
   width: auto;
+  border-bottom: 1px solid $c-gallery;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -12,15 +11,33 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 24px;
-    border: none;
-    width: 92.2%;
     margin: 0 auto;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 53px 40px 0 40px;
-    border: none;
-    width: 1300px;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.header--bg::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background: $c-green-bg url("../img/index-background-desktop@1x.jpg") no-repeat;
+    width: 658px;
+    height: 696px;
+    position: absolute;
+    left: 641px;
+    top: -3px;
+    z-index: -1;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
 
@@ -29,7 +46,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 0 15px 0;
+  padding: 11px 20px 15px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -98,6 +115,8 @@
 }
 
 .header__main-nav {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     width: 438px;
   }

@@ -1,6 +1,5 @@
 .catalog {
   width: auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -28,15 +27,19 @@
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
+    padding: 0;
   }
 }
 
 .catalog__container {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;

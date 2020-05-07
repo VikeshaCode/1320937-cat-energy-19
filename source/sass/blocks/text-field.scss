@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     @include font-oswald(20px);
@@ -21,17 +22,26 @@
   text-transform: uppercase;
   height: 45px;
   margin-left: 13px;
-  padding: 15px 52px 15px 16px;
+  padding: 15px 16px 15px 12px;
   flex-grow: 1;
+  outline: none;
 
+  &--phone,
   &--email {
-    background: url("../img/mail.svg") no-repeat calc(100% - 20px) center;
-    background-size: 18px;
+    padding: 15px 44px 15px 12px;
   }
 
-  &--phone {
-    background: url("../img/phone.svg") no-repeat calc(100% - 17px) center;
-    background-size: 21px;
+  &:hover {
+    border: 1px solid $c-silver;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $c-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $c-red;
   }
 
   @media (min-width: $tablet-width) {
@@ -40,4 +50,17 @@
     line-height: 1;
     height: 52px;
   }
+}
+
+.text-field__image {
+  position: absolute;
+  right: 18px;
+}
+
+.text-field__input:focus + .text-field__image {
+  fill: $c-green;
+}
+
+.text-field__input:invalid + .text-field__image {
+  fill: $c-red;
 }

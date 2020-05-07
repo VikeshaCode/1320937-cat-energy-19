@@ -1,20 +1,3 @@
-//.contacts {}
-
-.contacts__picture {
-  background: $c-light-grey url("../img/bg-map-mobile@1x.png") no-repeat;
-  min-height: 400px;
-
-  @media (min-width: $tablet-width) {
-    background: $c-light-grey url("../img/bg-map-tablet@1x.png") no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: $c-light-grey url("../img/bg-map-desktop@1x.png") no-repeat;
-  }
-}
-
-//.contacts__map-pin {}
-
 .contacts__promo {
   @include font-oswald(16px);
   line-height: 1.25;
@@ -35,4 +18,11 @@
     line-height: 1.25;
     text-align: right;
   }
+}
+
+
+.contacts__map {
+  background: $c-light-grey;
+  width: 100vw;
+  min-height: 400px;
 }
