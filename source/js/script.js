@@ -12,4 +12,3 @@ headerToogle.addEventListener("click", function () {
     header.classList.remove("header--opened");
   }
 });
-
