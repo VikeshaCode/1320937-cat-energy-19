@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
@@ -73,7 +74,7 @@
                       <label class="radio">
                         <input class="radio__input" type="radio" name="program" value="slim" checked="">
                         <span class="radio__circle">
-                          <div class="radio__check"></div>
+                          <span class="radio__check"></span>
                         </span>
                         <span class="radio__text">Похудение</span>
                       </label>
@@ -82,7 +83,7 @@
                       <label class="radio">
                         <input class="radio__input" type="radio" name="program" value="fat">
                         <span class="radio__circle">
-                          <div class="radio__check"></div>
+                          <span class="radio__check"></span>
                         </span>
                         <span class="radio__text">Набор массы</span>
                       </label>
@@ -91,7 +92,7 @@
                       <label class="radio">
                         <input class="radio__input" type="radio" name="program" value="help">
                         <span class="radio__circle">
-                          <div class="radio__check"></div>
+                          <span class="radio__check"></span>
                         </span>
                         <span class="radio__text">Не знаю(Нужен ваш совет)</span>
                       </label>
@@ -170,6 +171,7 @@
         </section>
       </section>
     </main>
+  </div>
     <footer class="footer">
       <div class="footer__contacts contacts">
         <p class="contacts__promo">
@@ -182,8 +184,9 @@
           Санкт-Петербург
         </p>
       </div>
-      <div class="contacts__picture">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587742724957!5m2!1sru!2sru" width="100vw" height="400" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587742724957!5m2!1sru!2sru"
+                height="400" width="100%" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
       </div>
       <div class="footer__wrapper">
@@ -229,7 +232,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
-  </div>
 
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>

@@ -30,6 +30,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
+    background-color: $c-green-bg;
     background-size: 320px 305px;
     background-position: top center;
     background-repeat: no-repeat;
