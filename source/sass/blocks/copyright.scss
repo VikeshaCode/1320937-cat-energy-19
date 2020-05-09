@@ -1,20 +1,16 @@
-//.copyright {}
-
 .copyright__link {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    &:hover .copyright__link-logo {
-      fill: $c-green;
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+    fill: $c-green;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -27,6 +23,10 @@
   width: 27px;
   height: 34px;
   fill: $c-brownish-grey;
+
+  &:hover {
+    fill: $c-green;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
