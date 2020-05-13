@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   background: $c-light-grey;
-  padding: 39px 20px 22px 20px;
+  padding: 36px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -35,7 +35,7 @@
 .footer__contacts {
   display: flex;
   justify-content: space-between;
-  padding: 26px 19px;
+  padding: 28px 19px;
   z-index: 1;
 
   &--grey {
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 69px 89px 59px 71px;
+    padding: 66px 71px 59px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +92,7 @@
 
 .footer__social {
   padding-top: 24px;
-  padding-bottom: 21px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $c-silver;
   border-top: 1px solid $c-silver;
 

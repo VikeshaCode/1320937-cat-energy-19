@@ -2,7 +2,7 @@
   background-color: $c-light-grey;
   margin: 0 auto;
   width: auto;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +86,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 60px;
+    margin-top: 65px;
     padding-right: 38px;
     width: 100%;
     word-wrap: normal;
@@ -173,11 +173,13 @@
   margin-top: 32px;
   text-align: center;
   display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
     width: 174px;
+    flex-direction: column;
     text-align: right;
     margin-top: 50px;
   }
@@ -186,11 +188,13 @@
     flex-direction: row;
     width: 100%;
     text-align: left;
+    justify-content: flex-start;
   }
 }
 
 .example__expenses span {
   display: block;
+  margin-left: 9px;
 
   @media (min-width: $desktop-width) {
     margin-left: 64px;
