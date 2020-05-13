@@ -11,6 +11,39 @@
   text-decoration: none;
   fill: $c-brownish-grey;
 
+  &--vk svg {
+    width: 22px;
+    height: 12px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+      margin-left: 10px;
+    }
+  }
+
+  &--insta svg {
+    width: 17px;
+    height: 17px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+      margin-left: 1px;
+    }
+  }
+
+  &--fb svg {
+    width: 10px;
+    height: 19px;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+      margin-right: -10px;
+    }
+  }
+
   &:hover {
     fill: $c-green;
   }

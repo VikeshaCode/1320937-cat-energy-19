@@ -20,15 +20,12 @@
 }
 
 .copyright__link-logo {
-  width: 27px;
-  height: 34px;
+  width: 41px;
+  height: 41px;
   fill: $c-brownish-grey;
+  margin-right: -7px;
 
   &:hover {
     fill: $c-green;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 23px;
   }
 }

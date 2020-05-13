@@ -1,17 +1,19 @@
 .advantages {
   width: auto;
   margin: 0 auto;
-  padding: 0 20px 33px 20px;
+  padding: 17px 20px 33px 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 51px 30px 105px 30px;
+    padding: 23px 30px 105px 30px;
     border-bottom: 1px solid $c-silver;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 40px 49px 40px;
+    padding: 51px 43px 49px 40px;
     border: none;
+    width: 1300px;
+    margin: 0 auto;
   }
 }
 
@@ -19,7 +21,7 @@
   @include font-oswald(36px);
   line-height: 1.67;
   color: $c-cod-grey;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -55,7 +57,7 @@
     line-height: 1.5;
     width: 50%;
     margin: 0;
-    padding-right: 105px;
+    padding-right: 90px;
     align-items: flex-start;
   }
 

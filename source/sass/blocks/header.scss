@@ -17,27 +17,27 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 40px 0 40px;
-    width: auto;
-    margin: 0 auto;
-    position: relative;
-  }
-}
+    width: 1300px;
 
-.header--bg::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    background: $c-green-bg url("../img/index-background-desktop@1x.jpg") no-repeat;
-    width: 658px;
-    height: 696px;
-    position: absolute;
-    left: 641px;
-    top: -3px;
-    z-index: -1;
-    background-size: cover;
-  }
+    &--bg::before {
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 720px auto;
+      background-color: $c-green-bg;
+      position: absolute;
+      top: -3px;
+      left: 49.5%;
+      z-index: -1;
+      display: inline-block;
+      width: 50%;
+      height: 696px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-desktop@2x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
   }
 }
 
@@ -74,44 +74,56 @@
   }
 }
 
-.header__logo:hover {
-  opacity: 0.8;
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 203px;
+    height: 60px;
+  }
 }
 
-.header__logo:active {
-  opacity: 0.6;
+.header--opened .header__toogle,
+.header--closed .header__toogle {
+  position: absolute;
+  top: 23px;
+  height: 19px;
+}
+
+.header--opened .header__toogle {
+  right: 22px;
+  width: 19px;
+  background: url("../img/icon-close.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header--closed .header__toogle {
+  right: 19px;
+  width: 25px;
+  background: url("../img/icon-mobile-menu.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__toogle {
   z-index: 2;
   cursor: pointer;
   border: none;
-
-  .header--opened & {
-    position: absolute;
-    top: 23px;
-    right: 22px;
-    width: 19px;
-    height: 19px;
-    background: url("../img/icon-close.svg");
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  .header--closed & {
-    position: absolute;
-    top: 23px;
-    right: 19px;
-    width: 25px;
-    height: 19px;
-    background: url("../img/icon-mobile-menu.svg");
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .header__main-nav {
