@@ -4,14 +4,14 @@
   justify-content: flex-end;
   width: 100%;
   border-bottom: 1px solid $c-gallery;
-  padding: 0 20px 25px 20px;
+  padding: 0 20px 22px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 45.8%;
     height: 431px;
     background: $c-light-grey;
-    margin-bottom: 141px;
+    margin: 0 0 141px 0;
     padding: 0 37px 40px 38px;
   }
 
@@ -46,7 +46,7 @@
 }
 
 .catalog-item__wrapper {
-  padding-top: 25px;
+  padding-top: 21px;
   display: flex;
   flex-direction: column;
   width: 141px;
@@ -110,6 +110,7 @@
 .catalog-item__button {
   margin: 0 auto;
   width: 100%;
+  padding-top: 10px;
 
   &--grey {
     background-color: $c-light-grey;
@@ -145,7 +146,7 @@
 .catalog-item__description {
   font-size: 12px;
   line-height: 1.33;
-  margin-top: 11px;
+  margin-top: 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -168,7 +169,7 @@
 }
 
 .catalog-item__feature {
-  margin-top: 18px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: 21px;
@@ -183,7 +184,7 @@
     min-width: 324px;
     height: 174px;
     margin-top: -72px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {

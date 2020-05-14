@@ -13,3 +13,4 @@ headerToogle.addEventListener("click", function () {
   }
 });
 
+svg4everybody();

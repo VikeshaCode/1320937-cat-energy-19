@@ -8,17 +8,16 @@
 
 .additional__title {
   white-space: nowrap;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding-left: 37px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 90px;
   }
 }
 
@@ -26,17 +25,19 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $c-gallery;
-  padding: 14px 0 17px 0;
+  padding: 13px 0 17px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 36px;
+    padding: 26px 36px;
     border: 1px solid rgba($c-silver, 0.5);
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     width: 895px;
-    padding: 15px 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 71px;
     border-right: none;
     border-left: none;
     justify-content: space-between;

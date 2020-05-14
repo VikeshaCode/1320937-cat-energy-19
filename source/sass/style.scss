@@ -1,3 +1,4 @@
+@import "fonts";
 @import "variables";
 @import "mixins";
 @import "blocks/additional";
@@ -58,13 +59,6 @@ body {
   background-color: $c-white;
 }
 
-.container {
-  @media (min-width: $desktop-width) {
-    width: 1300px;
-    margin: 0 auto;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -72,4 +66,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  max-width: 1300px;
 }

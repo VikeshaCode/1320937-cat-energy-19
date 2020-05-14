@@ -11,14 +11,18 @@
     opacity: 0.3;
   }
 
+  .radio__input:focus + .radio__circle {
+    border: 2px solid $c-dark-grey;
+  }
+
+  &:hover .radio__input {
+    border: 2px solid $c-dark-silver;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-oswald(20px);
     line-height: 1;
   }
-}
-
-.radio:hover .radio__circle {
-  border: 1px solid $c-dark-silver;
 }
 
 .radio__circle {

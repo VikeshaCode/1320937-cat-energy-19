@@ -12,7 +12,6 @@
   background: $c-green no-repeat center;
   margin-right: 20px;
 
-
   &--leaf {
     background-image: url("../img/advantage-leaf@1x.png");
     background-size: 50px 50px;
@@ -58,6 +57,7 @@
 .icon-list__text {
   @media (min-width: $tablet-width) {
     margin-top: 34px;
+    width: 100%;
   }
 }
 
@@ -126,4 +126,3 @@
     left: 117px;
   }
 }
-

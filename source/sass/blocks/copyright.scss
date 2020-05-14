@@ -1,20 +1,16 @@
-//.copyright {}
-
 .copyright__link {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    &:hover .copyright__link-logo {
-      fill: $c-green;
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+    fill: $c-green;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -24,11 +20,12 @@
 }
 
 .copyright__link-logo {
-  width: 27px;
-  height: 34px;
+  width: 41px;
+  height: 41px;
   fill: $c-brownish-grey;
+  margin-right: -7px;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 23px;
+  &:hover {
+    fill: $c-green;
   }
 }

@@ -45,6 +45,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-right: 277px;
     margin-left: 91px;
+    margin-top: -8px;
   }
 }
 
@@ -56,12 +57,14 @@
   margin-top: 64px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 113px;
+    margin-right: 123px;
     text-align: left;
+    margin-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
     text-align: center;
+    margin-top: 62px;
   }
 }
