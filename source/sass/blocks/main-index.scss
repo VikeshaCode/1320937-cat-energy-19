@@ -1,4 +1,6 @@
 .main-index {
+  display: block;
+
   @media (min-width: $tablet-width) {
     padding-top: 56px;
   }
@@ -6,6 +8,5 @@
   @media (min-width: $desktop-width) {
     padding-top: 106px;
     margin: 0 auto;
-    //width: 1300px;
   }
 }
