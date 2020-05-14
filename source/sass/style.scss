@@ -69,5 +69,8 @@ img {
 }
 
 .container {
-  max-width: 1300px;
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }

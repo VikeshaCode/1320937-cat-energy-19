@@ -6,17 +6,31 @@
   text-transform: uppercase;
   border: 1px solid rgba($c-silver, 0.5);
   min-height: 150px;
-  margin-top: 31px;
-  padding: 15px;
+  margin-top: 34px;
+  padding: 13px;
   flex-grow: 1;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-top: 69px;
+    margin-top: 75px;
     font-size: 20px;
     line-height: 1.5;
-    padding: 17px 20px;
+    padding: 10px 20px;
     min-height: 174px;
+  }
+}
+
+.textarea__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 65px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 

@@ -21,13 +21,14 @@
   border: 1px solid rgba($c-silver, 0.5);
   text-transform: uppercase;
   height: 45px;
-  margin-left: 13px;
+  margin-left: 16px;
   padding: 15px 16px 15px 12px;
   flex-grow: 1;
   outline: none;
 
   &--phone,
   &--email {
+    margin-left: 13px;
     padding: 15px 44px 15px 12px;
   }
 
@@ -49,6 +50,11 @@
     font-size: 20px;
     line-height: 1;
     height: 52px;
+    margin-left: 13px;
+
+    &--email {
+      margin-left: 20px;
+    }
   }
 }
 

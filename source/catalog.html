@@ -1,487 +1,540 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML Academy: Кэт энерджи</title>
-    <link href="fonts/oswaldregular.woff2" rel="preload" as="font" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
-    <link href="css/style.min.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script async src="source/js/picturefill.min.js"></script>
-    <script src="source/js/svgforeverybody.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header header--closed header--nojs">
-        <div class="header__wrapper">
-          <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
-            </picture>
-          </a>
-          <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <nav class="header__main-nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-catalog">
-        <section class="catalog">
-          <h1 class="catalog__title">Каталог продукции</h1>
-          <div class="catalog__wrapper">
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="chicken.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy PRO 500 г вкус курица" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="chicken.html">
-                    <h3>
-                      Cat Energy<br />
-                      PRO 500 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>500 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Курица</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>700 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">Заказать</a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="chicken.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy PRO 1000 г вкус курица" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="chicken.html">
-                    <h3>
-                      Cat Energy<br />
-                      PRO 1000 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>1000 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Курица</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>1000 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="fish.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy PRO 500 г вкус рыба" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="fish.html">
-                    <h3>
-                      Cat Energy<br />
-                      PRO 500 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>500 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Рыба</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>700 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="fish.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy PRO 1000 г вкус рыба" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="fish.html">
-                    <h3 class="catalog-item__title">
-                      Cat Energy<br />
-                      PRO 1000 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>1000 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Рыба</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>1000 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="buckwheat.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy Slim 500 г вкус гречка" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="buckwheat.html">
-                    <h3>
-                      Cat Energy<br />
-                      Slim 500 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>500 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Гречка</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>400 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="buckwheat.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy Slim 1000 г вкус гречка" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="buckwheat.html">
-                    <h3>
-                      Cat Energy<br />
-                      Slim 1000 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>1000 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Гречка</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>700 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item">
-              <div class="catalog__container">
-                <a href="rice.html">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x" />
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x" />
-                    <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x" />
-
-                    <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x" />
-                    <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x" />
-                    <img class="catalog-item__picture" width="140" height="144" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Функциональное питание для котов Cat Energy Slim 500 г вкус рис" />
-                  </picture>
-                </a>
-                <div class="catalog-item__wrapper">
-                  <a class="catalog-item__title" href="rice.html">
-                    <h3>
-                      Cat Energy<br />
-                      Slim 500 г
-                    </h3>
-                  </a>
-                  <div class="catalog-item__feature feature">
-                    <ul class="feature__list">
-                      <li class="feature__item">
-                        <span>Объем</span>
-                        <span>500 г</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Вкус</span>
-                        <span>Рис</span>
-                      </li>
-                      <li class="feature__item">
-                        <span>Цена</span>
-                        <span>500 Р.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <a href="booking.html" class="catalog-item__button button">
-                Заказать
-              </a>
-            </div>
-
-            <div class="catalog-item catalog-item--adds">
-              <img class="catalog-item__icon" src="img/icon-plus-mobile.svg" width="31" height="31" alt="Иконка в форме знака плюс" />
-              <div class="catalog-item__wrapper catalog-item__wrapper--adds">
-                <h3 class="catalog-item__title catalog-item__title--adds">Показать еще 100500 товаров</h3>
-                <p class="catalog-item__description">На самом деле вкусов гораздо больше!</p>
-              </div>
-              <a href="products.html" class="catalog-item__button catalog-item__button--grey button">
-                Показать все
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-catalog__additional additional">
-          <h2 class="additional__title title">Дополнительные товары</h2>
-          <div class="additional-promo__container">
-            <div class="additional__container">
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
-                  <h3 class="product__title">Сахарозаменитель</h3>
-                  <div class="product__feature feature__item">
-                    <span>1 упаковка (100 г)</span>
-                    <span>200 Р.</span>
-                  </div>
-                </div>
-                <button class="product__button button" type="button">Заказать</button>
-              </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
-                  <h3 class="product__title">Питьевая вода</h3>
-                  <div class="product__feature feature__item">
-                    <span>5 литров</span>
-                    <span>50 Р.</span>
-                  </div>
-                </div>
-                <button class="product__button button" type="button">Заказать</button>
-              </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
-                  <h3 class="product__title">Молоко</h3>
-                  <div class="product__feature feature__item">
-                    <span>1 литр</span>
-                    <span>100 Р.</span>
-                  </div>
-                </div>
-                <button class="product__button button" type="button">Заказать</button>
-              </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
-                  <h3 class="product__title">Витамины</h3>
-                  <div class="product__feature feature__item">
-                    <span>1 упаковка (30 г)</span>
-                    <span>300 Р.</span>
-                  </div>
-                </div>
-                <button class="product__button button" type="button">Заказать</button>
-              </div>
-            </div>
-
-            <section class="main-catalog__promo promo">
-              <img class="promo__icon" src="img/icon-gift.svg" width="56" height="61" alt="Иконка в виде подарка" />
-              <p class="promo__text">
-                Закажите все<br />
-                и получите чехол для<br />
-                кота в подарок!
-              </p>
-            </section>
-          </div>
-        </section>
-      </main>
+<head>
+  <meta charset="UTF-8"/>
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="fonts/oswaldregular.woff2" rel="preload" as="font"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous"/>
+  <link href="css/style.min.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <script async src="source/js/picturefill.min.js"></script>
+  <script src="source/js/svgforeverybody.min.js"></script>
+</head>
+<body>
+<header class="header header--closed header--nojs">
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg"/>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"/>
+          <img src="img/logo-mobile.svg" width="191" height="39"
+               alt="Логотип функционального питания для котов Cat energy"/>
+        </picture>
+      </a>
+      <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
+    <nav class="header__main-nav main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+<main class="main-catalog">
+  <div class="container">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <div class="catalog__wrapper">
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="chicken.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x"/>
+                <source type="image/webp"
+                        srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x"/>
 
-    <footer class="footer">
-      <div class="footer__contacts contacts">
-        <p class="contacts__promo">
-          приглашаем<br />
-          к сотрудничеству<br />
-          дилеров!
-        </p>
-        <p class="contacts__text">
-          ул. Большая<br/>Конюшенная, д. 19/8<br/>
-          <span>Санкт-Петербург</span>
-        </p>
-      </div>
-      <div class="contacts__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.32085871609698!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589360427535!5m2!1sru!2sru"
-          width="320px"
-          height="363px"
-          style="border: 0;"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-      <div class="footer__wrapper">
-        <a class="footer__link" href="index.html" aria-label="Логотип кэт энерджи">
-          <svg role="img" class="footer__logo" width="128" height="24">
-            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
-          </svg>
-        </a>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-                <svg role="img" class="social__link-icon" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
+                <source media="(min-width: 1300px)"
+                        srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/chicken-small-mobile@1x.jpg"
+                     srcset="img/chicken-small-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy PRO 500 г вкус курица"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="chicken.html">
+                <h3>
+                  Cat Energy<br/>
+                  PRO 500 г
+                </h3>
               </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-                <svg role="img" class="social__link-icon" width="17" height="17">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-                <svg role="img" class="social__link-icon" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Курица</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>700 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">Заказать</a>
         </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Академии">
-            <p class="copyright__link-text">HTML Academy</p>
-            <svg role="img" class="copyright__link-logo" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="chicken.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x"/>
+                <source type="image/webp"
+                        srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/chicken-big-mobile@1x.jpg"
+                     srcset="img/chicken-big-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy PRO 1000 г вкус курица"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="chicken.html">
+                <h3>
+                  Cat Energy<br/>
+                  PRO 1000 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Курица</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>1000 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="fish.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x"/>
+                <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/fish-small-mobile@1x.jpg"
+                     srcset="img/fish-small-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy PRO 500 г вкус рыба"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="fish.html">
+                <h3>
+                  Cat Energy<br/>
+                  PRO 500 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Рыба</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>700 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="fish.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x"/>
+                <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/fish-big-mobile@1x.jpg"
+                     srcset="img/fish-big-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy PRO 1000 г вкус рыба"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="fish.html">
+                <h3 class="catalog-item__title">
+                  Cat Energy<br/>
+                  PRO 1000 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Рыба</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>1000 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="buckwheat.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x"/>
+                <source type="image/webp"
+                        srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/buckwheat-small-mobile@1x.jpg"
+                     srcset="img/buckwheat-small-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy Slim 500 г вкус гречка"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="buckwheat.html">
+                <h3>
+                  Cat Energy<br/>
+                  Slim 500 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Гречка</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>400 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="buckwheat.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x"/>
+                <source type="image/webp"
+                        srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/buckwheat-big-mobile@1x.jpg"
+                     srcset="img/buckwheat-big-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy Slim 1000 г вкус гречка"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="buckwheat.html">
+                <h3>
+                  Cat Energy<br/>
+                  Slim 1000 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>1000 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Гречка</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>700 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog__container">
+            <a href="rice.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                        srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x"/>
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x"/>
+                <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x"/>
+
+                <source media="(min-width: 1300px)"
+                        srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x"/>
+                <source media="(min-width: 768px)"
+                        srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x"/>
+                <img class="catalog-item__picture" width="140" height="144" src="img/rice-small-mobile@1x.jpg"
+                     srcset="img/rice-small-mobile@2x.jpg 2x"
+                     alt="Функциональное питание для котов Cat Energy Slim 500 г вкус рис"/>
+              </picture>
+            </a>
+            <div class="catalog-item__wrapper">
+              <a class="catalog-item__title" href="rice.html">
+                <h3>
+                  Cat Energy<br/>
+                  Slim 500 г
+                </h3>
+              </a>
+              <div class="catalog-item__feature feature">
+                <ul class="feature__list">
+                  <li class="feature__item">
+                    <span>Объем</span>
+                    <span>500 г</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Вкус</span>
+                    <span>Рис</span>
+                  </li>
+                  <li class="feature__item">
+                    <span>Цена</span>
+                    <span>500 Р.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="booking.html" class="catalog-item__button button">
+            Заказать
+          </a>
+        </div>
+
+        <div class="catalog-item catalog-item--adds">
+          <img class="catalog-item__icon" src="img/icon-plus-mobile.svg" width="31" height="31"
+               alt="Иконка в форме знака плюс"/>
+          <div class="catalog-item__wrapper catalog-item__wrapper--adds">
+            <h3 class="catalog-item__title catalog-item__title--adds">Показать еще 100500 товаров</h3>
+            <p class="catalog-item__description">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <a href="products.html" class="catalog-item__button catalog-item__button--grey button">
+            Показать все
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="main-catalog__additional additional forms-line">
+    <div class="forms__wrapper">
+      <h2 class="additional__title title">Дополнительные товары</h2>
+      <div class="additional-promo__container">
+        <div class="additional__container">
+          <div class="additional-item product">
+            <div class="additional-item__wrapper">
+              <h3 class="product__title">Сахарозаменитель</h3>
+              <div class="product__feature feature__item">
+                <span>1 упаковка (100 г)</span>
+                <span>200 Р.</span>
+              </div>
+            </div>
+            <button class="product__button button" type="button">Заказать</button>
+          </div>
+          <div class="additional-item product">
+            <div class="additional-item__wrapper">
+              <h3 class="product__title">Питьевая вода</h3>
+              <div class="product__feature feature__item">
+                <span>5 литров</span>
+                <span>50 Р.</span>
+              </div>
+            </div>
+            <button class="product__button button" type="button">Заказать</button>
+          </div>
+          <div class="additional-item product">
+            <div class="additional-item__wrapper">
+              <h3 class="product__title">Молоко</h3>
+              <div class="product__feature feature__item">
+                <span>1 литр</span>
+                <span>100 Р.</span>
+              </div>
+            </div>
+            <button class="product__button button" type="button">Заказать</button>
+          </div>
+          <div class="additional-item product">
+            <div class="additional-item__wrapper">
+              <h3 class="product__title">Витамины</h3>
+              <div class="product__feature feature__item">
+                <span>1 упаковка (30 г)</span>
+                <span>300 Р.</span>
+              </div>
+            </div>
+            <button class="product__button button" type="button">Заказать</button>
+          </div>
+        </div>
+
+        <section class="main-catalog__promo promo">
+          <img class="promo__icon" src="img/icon-gift.svg" width="56" height="61" alt="Иконка в виде подарка"/>
+          <p class="promo__text">
+            Закажите все<br/>
+            и получите чехол для<br/>
+            кота в подарок!
+          </p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__contacts contacts">
+    <p class="contacts__promo">
+      приглашаем<br/>
+      к сотрудничеству<br/>
+      дилеров!
+    </p>
+    <p class="contacts__text">
+      ул. Большая<br/>Конюшенная, д. 19/8<br/>
+      <span>Санкт-Петербург</span>
+    </p>
+  </div>
+  <div class="contacts__map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.32085871609698!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589360427535!5m2!1sru!2sru"
+      width="320px"
+      height="363px"
+      style="border: 0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+  </div>
+  <div class="footer__wrapper">
+    <a class="footer__link" href="index.html" aria-label="Логотип кэт энерджи">
+      <svg role="img" class="footer__logo" width="128" height="24">
+        <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+      </svg>
+    </a>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
+            <svg role="img" class="social__link-icon" width="22" height="12">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
-
-    <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy"
+             aria-label="Мы в Инстаграме">
+            <svg role="img" class="social__link-icon" width="17" height="17">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"
+             aria-label="Мы в Фейсбуке">
+            <svg role="img" class="social__link-icon" width="10" height="19">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-  </body>
+    <div class="footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Академии">
+        <p class="copyright__link-text">HTML Academy</p>
+        <svg role="img" class="copyright__link-logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
+</body>
 </html>

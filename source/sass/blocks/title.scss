@@ -2,67 +2,22 @@
   @include font-oswald(24px);
   color: $c-cod-grey;
   position: relative;
-  background-color: $c-white;
   display: inline-block;
-
-  &::after {
-    top: 11px;
-    content: "";
-    height: 3px;
-    background-color: $c-green;
-    width: 100vw;
-    position: absolute;
-    z-index: 0;
-    left: 100%;
-    margin-left: 24px;
-  }
+  background-color: $c-white;
+  padding-right: 16px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-
-    &::before,
-    &::after {
-      top: 21px;
-      content: "";
-      height: 3px;
-      background-color: $c-green;
-      width: 100vw;
-      position: absolute;
-      z-index: 0;
-    }
-
-    &::before {
-      right: 100%;
-      margin-right: 9px;
-    }
-
-    &::after {
-      left: 100%;
-      margin-left: 37px;
-    }
+    margin-left: 30px;
+    padding-right: 42px;
+    padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    &::before,
-    &::after {
-      top: 21px;
-      content: "";
-      height: 3px;
-      background-color: $c-green;
-      width: 100vw;
-      position: absolute;
-      z-index: 0;
-    }
-
-    &::before {
-      right: 100%;
-      margin-right: 24px;
-    }
-
-    &::after {
-      left: 100%;
-      margin-left: 33px;
-    }
+    padding-right: 36px;
+    padding-left: 37px;
+    margin-left: 0;
   }
 }
 
