@@ -17,7 +17,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-            <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
+            <img class="header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
           </picture>
         </a>
         <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,7 +46,7 @@
         <section class="form__forms forms">
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="forms__container">
-              <fieldset class="forms__info-form info-form">
+              <fieldset class="forms__info-form info-form" tabindex="-1">
                 <ul class="info-form__list" role="none">
                   <li class="info-form__item">
                     <label class="text-field"
@@ -72,7 +72,7 @@
                 <ul class="program-form__list" role="none">
                   <li class="program-form__item">
                     <label class="radio">
-                      <input tabindex="0" class="radio__input" type="radio" name="program" value="slim" checked="" />
+                      <input class="radio__input" type="radio" name="program" value="slim" checked="" />
                       <span class="radio__circle">
                         <span class="radio__check"></span>
                       </span>
@@ -81,7 +81,7 @@
                   </li>
                   <li class="program-form__item">
                     <label class="radio">
-                      <input tabindex="1" class="radio__input" type="radio" name="program" value="fat" />
+                      <input class="radio__input" type="radio" name="program" value="fat" />
                       <span class="radio__circle">
                         <span class="radio__check"></span>
                       </span>
@@ -90,7 +90,7 @@
                   </li>
                   <li class="program-form__item">
                     <label class="radio">
-                      <input tabindex="2" class="radio__input" type="radio" name="program" value="help" />
+                      <input class="radio__input" type="radio" name="program" value="help" />
                       <span class="radio__circle">
                         <span class="radio__check"></span>
                       </span>
@@ -100,8 +100,8 @@
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="forms__contacts-form contacts-form forms-line">
-              <div class="forms__wrapper">
+            <fieldset class="forms__contacts-form contacts-form forms-line" tabindex="-1">
+              <div class="forms-line__wrapper">
                 <h2 class="contacts-form__title title">Контактные данные <br />(владельца кота)</h2>
                 <ul class="contacts-form__list" role="none">
                   <li class="contacts-form__item">
@@ -125,8 +125,8 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="forms__textarea textarea forms-line">
-              <div class="forms__wrapper">
+            <fieldset class="forms__textarea textarea forms-line" tabindex="-1">
+              <div class="forms-line__wrapper">
                 <h2 class="textarea__title title title-line">Комментарий</h2>
                 <div class="textarea__container">
                   <label>
@@ -137,33 +137,33 @@
             </fieldset>
 
             <fieldset class="forms__additions additions forms-line" tabindex="-1">
-              <div class="forms__wrapper">
+              <div class="forms-line__wrapper">
                 <h2 class="additions__title title title-line">Дополнительно</h2>
                 <ul class="additions__list" role="none">
                   <li class="additions__item">
                     <label class="checkbox">
-                      <input tabindex="0" class="checkbox__input" type="checkbox" name="adds" value="sugar" checked="" />
+                      <input class="checkbox__input" type="checkbox" name="adds" value="sugar" checked="" />
                       <span class="checkbox__box"></span>
                       <span class="checkbox__text">Сахарозаменитель</span>
                     </label>
                   </li>
                   <li class="additions__item">
                     <label class="checkbox">
-                      <input tabindex="1" class="checkbox__input" type="checkbox" name="adds" value="water" />
+                      <input class="checkbox__input" type="checkbox" name="adds" value="water" />
                       <span class="checkbox__box"></span>
                       <span class="checkbox__text">Питьевая вода</span>
                     </label>
                   </li>
                   <li class="additions__item">
                     <label class="checkbox">
-                      <input tabindex="2" class="checkbox__input" type="checkbox" name="adds" value="milk" />
+                      <input class="checkbox__input" type="checkbox" name="adds" value="milk" />
                       <span class="checkbox__box"></span>
                       <span class="checkbox__text">Молоко</span>
                     </label>
                   </li>
                   <li class="additions__item">
                     <label class="checkbox">
-                      <input tabindex="3" class="checkbox__input" type="checkbox" name="adds" value="vitamins" />
+                      <input class="checkbox__input" type="checkbox" name="adds" value="vitamins" />
                       <span class="checkbox__box"></span>
                       <span class="checkbox__text">Витамины</span>
                     </label>

@@ -41,7 +41,7 @@
     border: 2px solid $c-dark-grey;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border: 2px solid $c-red;
   }
 

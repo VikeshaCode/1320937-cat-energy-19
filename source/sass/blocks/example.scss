@@ -145,17 +145,19 @@
   top: 45px;
   left: 18px;
   background: $c-light-grey;
-  width: 82px;
 
   @media (min-width: $tablet-width) {
     background: $c-white;
     font-size: 14px;
-    width: 127px;
     top: 60px;
+    white-space: nowrap;
   }
 
   @media (min-width: $desktop-width) {
     background: $c-light-grey;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 14px;
   }
 }
 
@@ -239,8 +241,11 @@
 }
 
 .example__results b {
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted rgba($c-dark-grey, 0.23);
+    padding-bottom: 6px;
 
     &:hover {
       border-bottom: 1px solid rgba($c-dark-grey, 0.4);
@@ -288,6 +293,9 @@
   position: absolute;
   top: 3px;
   left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 34px;
@@ -321,9 +329,6 @@
     height: 8px;
     background-color: $c-green;
     border-radius: 50%;
-    position: absolute;
-    top: 13px;
-    left: 12px;
   }
 }
 

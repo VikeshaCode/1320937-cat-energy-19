@@ -1,0 +1,42 @@
+.forms-line {
+  &::before {
+    content: "";
+    position: relative;
+    top: 16px;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(90deg, #68b738 10%, #68b738 221px);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      top: 25px;
+      width: 100%;
+      position: relative;
+      display: block;
+      height: 3px;
+      background-image: linear-gradient(90deg, #68b738 10%, #68b738 221px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: relative;
+      top: 24px;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-image: linear-gradient(90deg, #68b738 10%, #68b738 221px);
+    }
+  }
+}
+
+.forms-line__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}

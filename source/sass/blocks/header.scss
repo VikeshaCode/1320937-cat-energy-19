@@ -94,6 +94,12 @@
   }
 }
 
+.header__logo-icon {
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
 .header--opened .header__toogle,
 .header--closed .header__toogle {
   position: absolute;
