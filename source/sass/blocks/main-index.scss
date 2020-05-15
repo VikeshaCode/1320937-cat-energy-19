@@ -1,6 +1,5 @@
 .main-index {
-  display: block;
-  overflow: hidden;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
