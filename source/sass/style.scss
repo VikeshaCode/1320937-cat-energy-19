@@ -16,6 +16,7 @@
 @import "blocks/footer";
 @import "blocks/form";
 @import "blocks/forms";
+@import "blocks/forms-line";
 @import "blocks/header";
 @import "blocks/hero-header";
 @import "blocks/icon-list";
@@ -41,10 +42,10 @@
   box-sizing: border-box;
 }
 
-body,
-main {
-  overflow-x: hidden;
-}
+//body,
+//main {
+//  overflow-x: hidden;
+//}
 
 body {
   min-width: 320px;
@@ -69,5 +70,8 @@ img {
 }
 
 .container {
-  max-width: 1300px;
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }

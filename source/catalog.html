@@ -8,37 +8,35 @@
     <link href="css/style.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script async src="source/js/picturefill.min.js"></script>
-    <script src="source/js/svgforeverybody.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header class="header header--closed header--nojs">
-        <div class="header__wrapper">
-          <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
-            </picture>
-          </a>
-          <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
-        <nav class="header__main-nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-catalog">
+    <header class="header header--closed header--nojs">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+            <img class="header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип функционального питания для котов Cat energy" />
+          </picture>
+        </a>
+        <button class="header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <nav class="header__main-nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-catalog">
+      <div class="container">
         <section class="catalog">
           <h1 class="catalog__title">Каталог продукции</h1>
           <div class="catalog__wrapper">
@@ -58,7 +56,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="chicken.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       PRO 500 г
                     </h3>
                   </a>
@@ -80,7 +78,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">Заказать</a>
+              <a href="booking.html" class="catalog-item__button button js-modal-open">Заказать</a>
             </div>
 
             <div class="catalog-item">
@@ -99,7 +97,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="chicken.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       PRO 1000 г
                     </h3>
                   </a>
@@ -121,7 +119,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -142,7 +140,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="fish.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       PRO 500 г
                     </h3>
                   </a>
@@ -164,7 +162,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -185,7 +183,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="fish.html">
                     <h3 class="catalog-item__title">
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       PRO 1000 г
                     </h3>
                   </a>
@@ -207,7 +205,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -228,7 +226,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="buckwheat.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       Slim 500 г
                     </h3>
                   </a>
@@ -250,7 +248,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -271,7 +269,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="buckwheat.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br />
                       Slim 1000 г
                     </h3>
                   </a>
@@ -293,7 +291,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -314,7 +312,7 @@
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__title" href="rice.html">
                     <h3>
-                      Cat Energy<br />
+                      Cat Energy&nbsp;<br/>
                       Slim 500 г
                     </h3>
                   </a>
@@ -336,7 +334,7 @@
                   </div>
                 </div>
               </div>
-              <a href="booking.html" class="catalog-item__button button">
+              <a href="booking.html" class="catalog-item__button button js-modal-open">
                 Заказать
               </a>
             </div>
@@ -353,50 +351,60 @@
             </div>
           </div>
         </section>
+      </div>
 
-        <section class="main-catalog__additional additional">
+      <section class="main-catalog__additional additional forms-line">
+        <div class="forms-line__wrapper">
           <h2 class="additional__title title">Дополнительные товары</h2>
-          <div class="additional-promo__container">
+          <div class="additional__wrapper">
             <div class="additional__container">
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
+              <div class="additional__item product">
+                <div class="product__wrapper">
                   <h3 class="product__title">Сахарозаменитель</h3>
-                  <div class="product__feature feature__item">
+                  <div class="product__feature">
                     <span>1 упаковка (100 г)</span>
                     <span>200 Р.</span>
                   </div>
                 </div>
-                <button class="product__button button" type="button">Заказать</button>
+                <a href="booking.html" class="product__button button js-modal-open">
+                  Заказать
+                </a>
               </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
+              <div class="additional__item product">
+                <div class="product__wrapper">
                   <h3 class="product__title">Питьевая вода</h3>
-                  <div class="product__feature feature__item">
+                  <div class="product__feature">
                     <span>5 литров</span>
                     <span>50 Р.</span>
                   </div>
                 </div>
-                <button class="product__button button" type="button">Заказать</button>
+                <a href="booking.html" class="product__button button js-modal-open">
+                  Заказать
+                </a>
               </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
+              <div class="additional__item product">
+                <div class="product__wrapper">
                   <h3 class="product__title">Молоко</h3>
-                  <div class="product__feature feature__item">
+                  <div class="product__feature">
                     <span>1 литр</span>
                     <span>100 Р.</span>
                   </div>
                 </div>
-                <button class="product__button button" type="button">Заказать</button>
+                <a href="booking.html" class="product__button button js-modal-open">
+                  Заказать
+                </a>
               </div>
-              <div class="additional-item product">
-                <div class="additional-item__wrapper">
+              <div class="additional__item product">
+                <div class="product__wrapper">
                   <h3 class="product__title">Витамины</h3>
-                  <div class="product__feature feature__item">
+                  <div class="product__feature">
                     <span>1 упаковка (30 г)</span>
                     <span>300 Р.</span>
                   </div>
                 </div>
-                <button class="product__button button" type="button">Заказать</button>
+                <a href="booking.html" class="product__button button js-modal-open">
+                  Заказать
+                </a>
               </div>
             </div>
 
@@ -409,9 +417,9 @@
               </p>
             </section>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__contacts contacts">
@@ -421,20 +429,12 @@
           дилеров!
         </p>
         <p class="contacts__text">
-          ул. Большая<br/>Конюшенная, д. 19/8<br/>
+          ул. Большая<br />Конюшенная, д. 19/8<br />
           <span>Санкт-Петербург</span>
         </p>
       </div>
       <div class="contacts__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.32085871609698!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589360427535!5m2!1sru!2sru"
-          width="320px"
-          height="363px"
-          style="border: 0;"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.32085871609698!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589360427535!5m2!1sru!2sru" width="320px" height="363px" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="footer__wrapper">
         <a class="footer__link" href="index.html" aria-label="Логотип кэт энерджи">
@@ -478,7 +478,9 @@
       </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script async src="js/picturefill.min.js"></script>
+    <script src="js/svgforeverybody.min.js"></script>
+    <script src="js/script.min.js"></script>
 
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>

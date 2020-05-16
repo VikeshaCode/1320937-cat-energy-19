@@ -1,9 +1,10 @@
 .main-form {
-  padding-top: 14px;
-  padding-bottom: 34px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    padding-top: 55px;
     padding-bottom: 72px;
   }
 

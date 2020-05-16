@@ -56,10 +56,23 @@
 
 .icon-list__text {
   @media (min-width: $tablet-width) {
-    margin-top: 34px;
-    width: 100%;
+    margin-top: 31px;
+    width: 102%;
   }
 }
+
+.icon-list__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 
 .icon-list__img--leaf::after {
   @media (min-width: $tablet-width) {

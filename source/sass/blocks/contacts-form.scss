@@ -1,22 +1,19 @@
-.contacts-form {
+.contacts-form__list {
+  list-style: none;
+  margin-top: 33px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.contacts-form__list {
-  list-style: none;
-  margin-top: 30px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 78px;
+    padding: 0 65px 0 69px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    max-width: 1300px;
+    margin: 75px auto 0 auto;
+    padding: 0 40px;
   }
 }
 
@@ -35,4 +32,14 @@
 
 .contacts-form__item:first-child {
   margin-top: 0;
+}
+
+.contacts-form__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.contacts-form__title {
+  display: inline-block;
 }

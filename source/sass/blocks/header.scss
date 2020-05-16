@@ -17,7 +17,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 40px 0 40px;
-    width: 1300px;
+    max-width: 1300px;
+    margin: 0 auto;
 
     &--bg::before {
       content: "";
@@ -32,10 +33,12 @@
       display: inline-block;
       width: 50%;
       height: 696px;
+      background-position: right;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
         background-size: 720px auto;
+        background-position: right;
       }
     }
   }
@@ -53,6 +56,10 @@
     width: auto;
     border: none;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 0;
   }
 }
 
@@ -82,14 +89,20 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.header__logo-icon {
+  width: 191px;
+  height: 39px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
+    height: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 203px;
     height: 60px;
+    width: 203px;
   }
 }
 
