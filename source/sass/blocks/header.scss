@@ -19,6 +19,8 @@
     padding: 53px 40px 0 40px;
     max-width: 1300px;
     margin: 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
 
     &--bg::before {
       content: "";
