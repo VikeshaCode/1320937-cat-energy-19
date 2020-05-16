@@ -19,8 +19,6 @@
     padding: 53px 40px 0 40px;
     max-width: 1300px;
     margin: 0 auto;
-    flex-grow: 1;
-    flex-shrink: 0;
 
     &--bg::before {
       content: "";
@@ -59,6 +57,10 @@
     border: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 0;
+  }
 }
 
 .header--closed .header__main-nav {
@@ -80,9 +82,6 @@
 }
 
 .header__logo {
-  width: 191px;
-  height: 39px;
-
   &:hover {
     opacity: 0.8;
   }
@@ -90,9 +89,15 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.header__logo-icon {
+  width: 191px;
+  height: 39px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
+    height: 59px;
   }
 
   @media (min-width: $desktop-width) {

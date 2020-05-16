@@ -28,10 +28,11 @@
 }
 
 .forms__program-form {
-  padding-left: 23px;
+  padding-left: 18px;
   padding-bottom: 22px;
-  padding-top: 16px;
+  padding-top: 17px;
   border: 1px solid $c-gallery;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding: 23px 0 25px 28px;
@@ -44,7 +45,7 @@
 }
 
 .forms__contacts-form {
-  padding-top: 27px;
+  padding-top: 26px;
   outline: none;
 
   @media (min-width: $tablet-width) {
@@ -83,11 +84,12 @@
   padding-top: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    padding-top: 64px;
   }
 }
 

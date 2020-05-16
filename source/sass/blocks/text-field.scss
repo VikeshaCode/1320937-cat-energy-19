@@ -36,8 +36,7 @@
     border: 1px solid $c-silver;
   }
 
-  &:focus,
-  &:active {
+  &:focus {
     border: 2px solid $c-dark-grey;
   }
 
@@ -50,7 +49,7 @@
     font-size: 20px;
     line-height: 1;
     height: 52px;
-    margin-left: 13px;
+    margin-left: 17px;
 
     &--email {
       margin-left: 20px;
@@ -63,8 +62,7 @@
   right: 18px;
 }
 
-.text-field__input:focus + .text-field__image,
-.text-field__input:active + .text-field__image {
+.text-field__input:focus + .text-field__image {
   fill: $c-green;
 }
 

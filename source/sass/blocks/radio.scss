@@ -17,7 +17,7 @@
   }
 
   .radio__input:focus + .radio__circle {
-    border: 2px solid $c-dark-grey;
+    border: 1px solid $c-dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,7 +62,7 @@
   display: block;
   overflow: hidden;
   padding-top: 8px;
-  padding-left: 12px;
+  padding-left: 16px;
 
   @media (min-width: $tablet-width) {
     padding-left: 17px;

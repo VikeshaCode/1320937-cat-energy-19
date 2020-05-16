@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 23px 30px 105px 30px;
+    padding: 23px 30px 102px 30px;
     border-bottom: 1px solid $c-silver;
   }
 
@@ -74,13 +74,19 @@
 
 .advantages__item:nth-child(2n) {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding-left: 27px;
+    padding-left: 30px;
   }
 }
 
 .advantages__item:first-child,
 .advantages__item:first-child + .advantages__item {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-bottom: 129px;
+    margin-bottom: 132px;
+  }
+}
+
+.advantages__item:last-child {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-right: 78px;
   }
 }
