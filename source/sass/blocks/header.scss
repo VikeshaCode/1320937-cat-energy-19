@@ -91,13 +91,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 203px;
-    height: 60px;
   }
 }
 
 .header__logo-icon {
   @media (min-width: $desktop-width) {
+    height: 60px;
     width: 300px;
   }
 }

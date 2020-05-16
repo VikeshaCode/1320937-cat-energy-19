@@ -63,10 +63,11 @@
   right: 18px;
 }
 
-.text-field__input:focus + .text-field__image {
+.text-field__input:focus + .text-field__image,
+.text-field__input:active + .text-field__image {
   fill: $c-green;
 }
 
-.text-field__input:invalid + .text-field__image {
+.text-field__input:focus:invalid + .text-field__image {
   fill: $c-red;
 }

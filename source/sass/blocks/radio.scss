@@ -6,17 +6,18 @@
   display: flex;
   overflow: hidden;
   cursor: pointer;
+  outline: none;
 
   &:active {
     opacity: 0.3;
   }
 
-  .radio__input:focus + .radio__circle {
-    border: 2px solid $c-dark-grey;
+  .radio__input:hover + .radio__circle {
+    border: 1px solid $c-dark-silver;
   }
 
-  &:hover .radio__input {
-    border: 2px solid $c-dark-silver;
+  .radio__input:focus + .radio__circle {
+    border: 2px solid $c-dark-grey;
   }
 
   @media (min-width: $tablet-width) {

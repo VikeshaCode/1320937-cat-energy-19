@@ -24,12 +24,14 @@
 .additional__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $c-gallery;
+  border-bottom: 1px solid rgba($c-silver, 0.5);
   padding: 13px 0 17px 0;
 
   @media (min-width: $tablet-width) {
     padding: 26px 36px;
-    border: 1px solid rgba($c-silver, 0.5);
+    border-bottom: 1px solid rgba($c-silver, 0.5);
+    border-right: 1px solid rgba($c-silver, 0.5);
+    border-left: 1px solid rgba($c-silver, 0.5);
   }
 
   @media (min-width: $desktop-width) {
@@ -45,7 +47,7 @@
 }
 
 .additional__item:first-child {
-  border-top: 1px solid $c-gallery;
+  border-top: 1px solid rgba($c-silver, 0.5);
 }
 
 .additional__wrapper {

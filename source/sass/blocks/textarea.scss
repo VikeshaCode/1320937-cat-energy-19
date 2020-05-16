@@ -9,6 +9,17 @@
   padding: 13px;
   flex-grow: 1;
   width: 100%;
+  outline: none;
+
+
+  &:hover {
+    border: 1px solid $c-silver;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $c-dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 75px;
