@@ -78,6 +78,9 @@
 }
 
 .header__logo {
+  width: 191px;
+  height: 39px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -91,13 +94,8 @@
   }
 
   @media (min-width: $desktop-width) {
-  }
-}
-
-.header__logo-icon {
-  @media (min-width: $desktop-width) {
     height: 60px;
-    width: 300px;
+    width: 203px;
   }
 }
 
