@@ -81,7 +81,7 @@
 .advantages__item:first-child,
 .advantages__item:first-child + .advantages__item {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-bottom: 132px;
+    margin-bottom: 136px;
   }
 }
 
