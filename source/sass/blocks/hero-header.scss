@@ -79,6 +79,10 @@
     text-align: left;
     margin-top: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 415px;
+  }
 }
 
 .hero-header__picture {

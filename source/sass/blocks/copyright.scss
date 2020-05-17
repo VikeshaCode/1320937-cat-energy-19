@@ -15,6 +15,7 @@
 }
 
 .copyright__link-text {
+  pointer-events: none;
   font-size: 16px;
   color: $c-dark-grey;
 }
